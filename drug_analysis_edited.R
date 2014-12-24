@@ -23,11 +23,11 @@ drugA <- "LANSOPRAZOLE"
 drugB <- "DOXAZOSIN"
 
 
-drugB <- cur_drug
+drugA <- cur_drug
 #out <- capture.output(drugB)
-cat(drugB, file = "drug_coxph_summ.txt", sep="\n", append=TRUE)
+cat(drugA, file = "drug_coxph_summ.txt", sep="\n", append=TRUE)
 
-drugs <- c(drugA,drugB)
+drugs <- c(drugA)
 
 #drug columns
 dc <- grep("DRUG",colnames(data))
@@ -229,7 +229,7 @@ for(drug in drugs){
   drugdur <- cbind(drugdur,tmp)  
 }
 colnames(drugcol) <- drugs
-drugs_dur <- c("LANSOPRAZOLE", "DOXAZOSIN")
+drugs_dur <- c("DOXAZOSIN")
 colnames(drugdur) <- paste(drugs_dur,"dur",sep="_")
 
 mydata <- data.frame(cbind(xtab, drugcol, drugdur))
@@ -302,24 +302,24 @@ for (row_name in rownames(mydata.use)) {
 
 #all subjects 
 coxph_val <- coxph(mysurv ~ DOXAZOSIN_dur + NUMDRUGS + MMSE + EDUX + APOE2 + SEX * APOE4, data=mydata.use, subset = AGE >= 55)
-coxph(mysurv ~ LANSOPRAZOLE_dur + MMSE + EDUX + APOE2 + SEX * APOE4, data=mydata.use, subset= AGE >= 55)
+###coxph(mysurv ~ LANSOPRAZOLE_dur + MMSE + EDUX + APOE2 + SEX * APOE4, data=mydata.use, subset= AGE >= 55)
 
 #Write coxph values to file
 out <- capture.output(coxph_val)
 cat(out, file = "drug_coxph_summ.txt", sep = "\n", append=TRUE)
 
 #limit to males
-coxph(mysurv ~ DOXAZOSIN_dur + MMSE + EDUX + APOE2 + APOE4, data=mydata.use, subset=SEX==1)
-coxph(mysurv ~ LANSOPRAZOLE_dur + MMSE + EDUX + APOE2 + APOE4, data=mydata.use, subset=SEX==1)
+###coxph(mysurv ~ DOXAZOSIN_dur + MMSE + EDUX + APOE2 + APOE4, data=mydata.use, subset=SEX==1)
+###coxph(mysurv ~ LANSOPRAZOLE_dur + MMSE + EDUX + APOE2 + APOE4, data=mydata.use, subset=SEX==1)
 
 
 #limit to APOE4 carriers
-coxph(mysurv ~ DOXAZOSIN_dur + SEX + EDUX + MMSE + APOE2, data=mydata.use, subset=APOE4==1)
-coxph(mysurv ~ LANSOPRAZOLE_dur + SEX + EDUX + MMSE+ APOE2, data=mydata.use, subset=APOE4==1)
+###coxph(mysurv ~ DOXAZOSIN_dur + SEX + EDUX + MMSE + APOE2, data=mydata.use, subset=APOE4==1)
+###coxph(mysurv ~ LANSOPRAZOLE_dur + SEX + EDUX + MMSE+ APOE2, data=mydata.use, subset=APOE4==1)
 
 #in addition limit to males
-coxph(mysurv ~ DOXAZOSIN_dur + EDUX + MMSE + APOE2, data=mydata.use, subset=APOE4==1 & SEX==1)
-coxph(mysurv ~ LANSOPRAZOLE_dur + EDUX + MMSE +APOE2, data=mydata.use, subset=APOE4==1 & SEX==1)
+###coxph(mysurv ~ DOXAZOSIN_dur + EDUX + MMSE + APOE2, data=mydata.use, subset=APOE4==1 & SEX==1)
+###coxph(mysurv ~ LANSOPRAZOLE_dur + EDUX + MMSE +APOE2, data=mydata.use, subset=APOE4==1 & SEX==1)
 
 
 ##survival curve##
