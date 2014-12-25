@@ -5,6 +5,11 @@ require(survival)
 data <- read.csv("altmann06122013.csv", as.is=T)
 data.df <- data.frame(data)
 
+message("preparing table... (takes a while)")
+xtab <- t(sapply(ids,function(x){ getInfo(data,x)}))
+colnames(xtab) <- cnames
+save(xtab, file=xtab.fname)
+
 #prepared data
 xtab.fname <- "xxx.RData"
 #xtab.fname <- "/mnt/mapricot/musk2/home/altmann/data/NACC/RData/drug_conversion.RData"
