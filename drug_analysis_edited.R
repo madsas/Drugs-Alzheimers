@@ -169,7 +169,10 @@ RXlength <- function(dat, id, dc, dn, xt){
 	#get this visit date -Sasi
       k1 <- subset(tmp, subset=vnumber==vn)
       vnDate <- as.Date(paste(k1[1,c("visityr","visitmo","visitday")], collapse="-"))
-	  if (vnDate > convDate) return(rxlen) #just return what you have as soon as any sort of conversion happens
+	  if (vnDate > convDate) {
+		  message('Notification: Conversion happened while taking drug')
+		  return(rxlen) #just return what you have as soon as any sort of conversion happens
+	  }
 	
 
     vnm1 <- max(subset(tmp, subset=vnumber<vn)[,"vnumber"])
