@@ -1,5 +1,14 @@
 require(survival)
 
+#parameters
+#outputfilename <- "drug_coxph_summ.txt"
+outputfilename <- "drug_coxph_summ_2.txt"
+#outputfilename <- "junk.txt"
+#Subset of patient
+#patientSubset <- 1 #HC at baseline
+#patientSubset <- 2 #MCI at baseline
+patientSubset <- 3 #HC or MCI at baseline
+
 #read.data
 
 data <- read.csv("altmann06122013.csv", as.is=T)
@@ -15,8 +24,8 @@ drug_list <- drug_list$Drug
 drug_list <- as.character(drug_list)
 drug_list <- t(drug_list)
 drug_list <- as.vector(drug_list)
-#drug_list <- drug_list[1489:1584]
-drug_list <- drug_list[1489]
+drug_list <- drug_list[1489:1679]
+#drug_list <- drug_list[1489]
 
 for (cur_drug in drug_list) {
 
@@ -26,7 +35,7 @@ drugB <- "DOXAZOSIN"
 
 drugA <- cur_drug
 #out <- capture.output(drugB)
-cat(drugA, file = "drug_coxph_summ.txt", sep="\n", append=TRUE)
+cat(drugA, file = outputfilename, sep="\n", append=TRUE)
 
 drugs <- c(drugA)
 
@@ -141,8 +150,13 @@ getInfo <- function(dd, id){
 
 }
 
-RXlength <- function(dat, id, dc, dn){
+RXlength <- function(dat, id, dc, dn, xt){
   #message(id)
+#get subset of xtab -Sasi
+	tmpxt <- xt[id,]
+	#get time of any sort of conversion
+	convDate <- min(tmpxt[c('CONVMCI','CONVAD')])
+
 
   rxlen <- 0
 
@@ -151,6 +165,12 @@ RXlength <- function(dat, id, dc, dn){
   vmax <- max(tmp[,"vnumber"])
   for(z in which(use.idx)){
     vn <- tmp[z,"vnumber"]
+  	
+	#get this visit date -Sasi
+      k1 <- subset(tmp, subset=vnumber==vn)
+      vnDate <- as.Date(paste(k1[1,c("visityr","visitmo","visitday")], collapse="-"))
+	  if (vnDate > convDate) return(rxlen) #just return what you have as soon as any sort of conversion happens
+	
 
     vnm1 <- max(subset(tmp, subset=vnumber<vn)[,"vnumber"])
     vnp1 <- min(subset(tmp, subset=vnumber>vn)[,"vnumber"])
@@ -172,7 +192,8 @@ RXlength <- function(dat, id, dc, dn){
       vn1 <- as.Date(paste(k1[1,c("visityr","visitmo","visitday")], collapse="-"))
       k2 <- subset(tmp, subset=vnumber==vnp1)
       vn2 <- as.Date(paste(k2[1,c("visityr","visitmo","visitday")], collapse="-"))
-      rxlen <- rxlen + (vn2 - vn1)
+      #rxlen <- rxlen + (vn2 - vn1) #THIS IS AN ERROR DOUBLE COUNTS - SASI
+      rxlen <- rxlen + (vn2 - vn1)/2 #Sasi--this is correct
     }
 
     #last visit
@@ -182,7 +203,8 @@ RXlength <- function(dat, id, dc, dn){
       vn1 <- as.Date(paste(k1[1,c("visityr","visitmo","visitday")], collapse="-"))
       k2 <- subset(tmp, subset=vnumber==vmax)
       vn2 <- as.Date(paste(k2[1,c("visityr","visitmo","visitday")], collapse="-"))
-      rxlen <- rxlen + (vn2 - vn1)
+      #rxlen <- rxlen + (vn2 - vn1)#THIS IS AN ERROR DOUBLE COUNTS - SASI
+      rxlen <- rxlen + (vn2 - vn1)/2
     }
   }
   return(rxlen)
@@ -224,7 +246,7 @@ for(drug in drugs){
 
   tmp <- rep(0, nrow(xtab))
   names(tmp) <- rownames(xtab)
-  tmp2 <- sapply(drug.users, function(x){ RXlength(data,x,dc,drug)})
+  tmp2 <- sapply(drug.users, function(x){ RXlength(data,x,dc,drug,xtab)})
   tmp[drug.users] <- tmp2
   tmp <- tmp/365.25
   drugdur <- cbind(drugdur,tmp)  
@@ -236,14 +258,20 @@ colnames(drugdur) <- paste(drugs_dur,"dur",sep="_")
 mydata <- data.frame(cbind(xtab, drugcol, drugdur))
 
 ##select subset to work with
-#HC @ baseline
-#mydata.use <- subset(mydata, subset=DX==1 & !is.na(APOE))
+if (patientSubset == 1) {
+	#HC @ baseline
+	mydata.use <- subset(mydata, subset=DX==1 & !is.na(APOE))
+}
 
-#MCI @ baseline
-#mydata.use <- subset(mydata, subset=DX==2 & !is.na(APOE))
+else if (patientSubset == 2) {
+	#MCI @ baseline
+	mydata.use <- subset(mydata, subset=DX==2 & !is.na(APOE))
+}
 
-#HC or MCI @ baseline
-mydata.use <- subset(mydata, subset=(DX==1 | DX==2) & !is.na(APOE))
+else {
+	#HC or MCI @ baseline
+	mydata.use <- subset(mydata, subset=(DX==1 | DX==2) & !is.na(APOE))
+}
 
 AGE <- (mydata.use$ENTRY-mydata.use$BIRTH)/365.25
 
@@ -272,7 +300,7 @@ convert    <- apply(mydata.use[,c("CONVMCI","CONVAD")],1,max)
 
 mysurv <- Surv(agestart, ageconvert, convert)
 
-#LOAD NUMDRUGS--SASI
+#LOAD NUMDRUGS--SASI (for HC or MCI conversion to either MCI or AD)
 load("NUMDRUGS.Rdata")
 
 #all subjects 
@@ -281,7 +309,7 @@ coxph_val <- coxph(mysurv ~ DOXAZOSIN_dur + NUMDRUGS + MMSE + EDUX + APOE2 + SEX
 
 #Write coxph values to file
 out <- capture.output(coxph_val)
-cat(out, file = "drug_coxph_summ.txt", sep = "\n", append=TRUE)
+cat(out, file = outputfilename, sep = "\n", append=TRUE)
 
 #limit to males
 ###coxph(mysurv ~ DOXAZOSIN_dur + MMSE + EDUX + APOE2 + APOE4, data=mydata.use, subset=SEX==1)
