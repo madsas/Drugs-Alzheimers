@@ -2,7 +2,7 @@ require(survival)
 
 #parameters
 #outputfilename <- "drug_coxph_summ.txt"
-outputfilename <- "drug_coxph_summ_2.txt"
+outputfilename <- "drug_coxph_summ_3.txt"
 #outputfilename <- "junk.txt"
 #Subset of patient
 #patientSubset <- 1 #HC at baseline
@@ -155,7 +155,7 @@ RXlength <- function(dat, id, dc, dn, xt){
 #get subset of xtab -Sasi
 	tmpxt <- xt[id,]
 	#get time of any sort of conversion
-	convDate <- min(tmpxt[c('CONVMCI','CONVAD')])
+	convDate <- min(tmpxt[c('TIMEMCI','TIMEAD')])
 
 
   rxlen <- 0
@@ -170,7 +170,7 @@ RXlength <- function(dat, id, dc, dn, xt){
       k1 <- subset(tmp, subset=vnumber==vn)
       vnDate <- as.Date(paste(k1[1,c("visityr","visitmo","visitday")], collapse="-"))
 	  if (vnDate > convDate) {
-		  message('Notification: Conversion happened while taking drug')
+		  #message('Notification: Conversion happened while taking drug')
 		  return(rxlen) #just return what you have as soon as any sort of conversion happens
 	  }
 	
