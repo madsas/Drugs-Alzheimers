@@ -1,0 +1,10 @@
+Loading required package: survival
+Loading required package: splines
+VENLAFAXINE
+loading table from: /afs/.ir.stanford.edu/users/s/a/sasidhar/naccdataset/greicius_project/drug_conversion.RData
+computing drug users and usage duration
+VENLAFAXINE
+Call:coxph(formula = mysurv ~ DOXAZOSIN_dur + NUMDRUGS + MMSE + EDUX +     APOE2 + SEX * APOE4, data = mydata.use, subset = AGE >= 55)                  coef exp(coef) se(coef)       z       pDOXAZOSIN_dur -0.04895     0.952  0.07568  -0.647 5.2e-01NUMDRUGS       0.00986     1.010  0.00926   1.065 2.9e-01MMSE          -0.15117     0.860  0.01210 -12.497 0.0e+00EDUX           0.04458     1.046  0.01013   4.400 1.1e-05APOE2         -0.24839     0.780  0.11716  -2.120 3.4e-02SEX           -0.12792     0.880  0.09773  -1.309 1.9e-01APOE4          0.24625     1.279  0.20348   1.210 2.3e-01SEX:APOE4      0.23966     1.271  0.13071   1.834 6.7e-02Likelihood ratio test=260  on 8 df, p=0  n= 2583, number of events= 964    (7 observations deleted due to missingness)
+0.517755970438512
+-0.048952088159625
+There were 50 or more warnings (use warnings() to see the first 50)

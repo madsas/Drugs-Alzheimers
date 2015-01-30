@@ -1,0 +1,10 @@
+Loading required package: survival
+Loading required package: splines
+RALOXIFENE
+loading table from: /afs/.ir.stanford.edu/users/s/a/sasidhar/naccdataset/greicius_project/drug_conversion.RData
+computing drug users and usage duration
+RALOXIFENE
+Call:coxph(formula = mysurv ~ DOXAZOSIN_dur + NUMDRUGS + MMSE + EDUX +     APOE2 + SEX * APOE4, data = mydata.use, subset = AGE >= 55)                  coef exp(coef) se(coef)       z       pDOXAZOSIN_dur -0.01173     0.988  0.07972  -0.147 8.8e-01NUMDRUGS       0.00977     1.010  0.00926   1.055 2.9e-01MMSE          -0.15163     0.859  0.01207 -12.559 0.0e+00EDUX           0.04454     1.046  0.01013   4.395 1.1e-05APOE2         -0.24674     0.781  0.11724  -2.105 3.5e-02SEX           -0.12751     0.880  0.09833  -1.297 1.9e-01APOE4          0.24859     1.282  0.20346   1.222 2.2e-01SEX:APOE4      0.23734     1.268  0.13070   1.816 6.9e-02Likelihood ratio test=260  on 8 df, p=0  n= 2583, number of events= 964    (7 observations deleted due to missingness)
+0.883036593096635
+-0.0117289040441297
+There were 50 or more warnings (use warnings() to see the first 50)

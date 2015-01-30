@@ -1,0 +1,10 @@
+Loading required package: survival
+Loading required package: splines
+RED YEAST RICE
+loading table from: /afs/.ir.stanford.edu/users/s/a/sasidhar/naccdataset/greicius_project/drug_conversion.RData
+computing drug users and usage duration
+RED YEAST RICE
+Call:coxph(formula = mysurv ~ DOXAZOSIN_dur + NUMDRUGS + MMSE + EDUX +     APOE2 + SEX * APOE4, data = mydata.use, subset = AGE >= 55)                  coef exp(coef) se(coef)       z       pDOXAZOSIN_dur -0.31547     0.729  0.42143  -0.749 4.5e-01NUMDRUGS       0.00978     1.010  0.00926   1.056 2.9e-01MMSE          -0.15139     0.860  0.01208 -12.537 0.0e+00EDUX           0.04455     1.046  0.01013   4.398 1.1e-05APOE2         -0.24807     0.780  0.11717  -2.117 3.4e-02SEX           -0.13061     0.878  0.09771  -1.337 1.8e-01APOE4          0.24505     1.278  0.20347   1.204 2.3e-01SEX:APOE4      0.23899     1.270  0.13067   1.829 6.7e-02Likelihood ratio test=260  on 8 df, p=0  n= 2583, number of events= 964    (7 observations deleted due to missingness)
+0.454114827979642
+-0.315469203619169
+There were 50 or more warnings (use warnings() to see the first 50)

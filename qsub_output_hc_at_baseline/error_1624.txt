@@ -1,0 +1,10 @@
+Loading required package: survival
+Loading required package: splines
+NIACIN
+loading table from: /afs/.ir.stanford.edu/users/s/a/sasidhar/naccdataset/greicius_project/drug_conversion.RData
+computing drug users and usage duration
+NIACIN
+Call:coxph(formula = mysurv ~ DOXAZOSIN_dur + NUMDRUGS + MMSE + EDUX +     APOE2 + SEX * APOE4, data = mydata.use, subset = AGE >= 55)                 coef exp(coef) se(coef)      z       pDOXAZOSIN_dur -0.3157     0.729  0.09085 -3.475 5.1e-04NUMDRUGS       0.0285     1.029  0.00909  3.135 1.7e-03MMSE          -0.1509     0.860  0.02047 -7.373 1.7e-13EDUX          -0.0114     0.989  0.01084 -1.055 2.9e-01APOE2         -0.0594     0.942  0.08783 -0.676 5.0e-01SEX           -0.2604     0.771  0.07958 -3.272 1.1e-03APOE4          0.0279     1.028  0.23046  0.121 9.0e-01SEX:APOE4      0.2745     1.316  0.13554  2.025 4.3e-02Likelihood ratio test=158  on 8 df, p=0  n= 5345, number of events= 1048    (28 observations deleted due to missingness)
+0.000511413459132748
+-0.3156785611956
+There were 50 or more warnings (use warnings() to see the first 50)

@@ -1,0 +1,10 @@
+Loading required package: survival
+Loading required package: splines
+MODAFINIL
+loading table from: /afs/.ir.stanford.edu/users/s/a/sasidhar/naccdataset/greicius_project/drug_conversion.RData
+computing drug users and usage duration
+MODAFINIL
+Call:coxph(formula = mysurv ~ DOXAZOSIN_dur + NUMDRUGS + MMSE + EDUX +     APOE2 + SEX * APOE4, data = mydata.use, subset = AGE >= 55)                 coef exp(coef) se(coef)       z       pDOXAZOSIN_dur -0.0941     0.910  0.16192 -0.5809 5.6e-01NUMDRUGS       0.0268     1.027  0.00907  2.9490 3.2e-03MMSE          -0.1535     0.858  0.02044 -7.5127 5.8e-14EDUX          -0.0114     0.989  0.01092 -1.0398 3.0e-01APOE2         -0.0534     0.948  0.08783 -0.6077 5.4e-01SEX           -0.2402     0.786  0.07957 -3.0191 2.5e-03APOE4          0.0167     1.017  0.23045  0.0726 9.4e-01SEX:APOE4      0.2802     1.323  0.13552  2.0676 3.9e-02Likelihood ratio test=140  on 8 df, p=0  n= 5345, number of events= 1048    (28 observations deleted due to missingness)
+0.561312936165147
+-0.0940602723923878
+There were 50 or more warnings (use warnings() to see the first 50)

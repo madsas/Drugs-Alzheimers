@@ -1,0 +1,10 @@
+Loading required package: survival
+Loading required package: splines
+CLONIDINE
+loading table from: /afs/.ir.stanford.edu/users/s/a/sasidhar/naccdataset/greicius_project/drug_conversion.RData
+computing drug users and usage duration
+CLONIDINE
+Call:coxph(formula = mysurv ~ DOXAZOSIN_dur + NUMDRUGS + MMSE + EDUX +     APOE2 + SEX * APOE4, data = mydata.use, subset = AGE >= 55)                 coef exp(coef) se(coef)        z       pDOXAZOSIN_dur -0.1590     0.853  0.10222 -1.55519 1.2e-01NUMDRUGS       0.0268     1.027  0.00904  2.96963 3.0e-03MMSE          -0.1532     0.858  0.02044 -7.49431 6.7e-14EDUX          -0.0114     0.989  0.01089 -1.04427 3.0e-01APOE2         -0.0523     0.949  0.08784 -0.59529 5.5e-01SEX           -0.2404     0.786  0.07954 -3.02265 2.5e-03APOE4          0.0011     1.001  0.23048  0.00476 1.0e+00SEX:APOE4      0.2890     1.335  0.13555  2.13222 3.3e-02Likelihood ratio test=143  on 8 df, p=0  n= 5345, number of events= 1048    (28 observations deleted due to missingness)
+0.119900455473295
+-0.158969315742579
+There were 50 or more warnings (use warnings() to see the first 50)

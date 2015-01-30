@@ -1,0 +1,10 @@
+Loading required package: survival
+Loading required package: splines
+SPIRONOLACTONE
+loading table from: /afs/.ir.stanford.edu/users/s/a/sasidhar/naccdataset/greicius_project/drug_conversion.RData
+computing drug users and usage duration
+SPIRONOLACTONE
+Call:coxph(formula = mysurv ~ DOXAZOSIN_dur + NUMDRUGS + MMSE + EDUX +     APOE2 + SEX * APOE4, data = mydata.use, subset = AGE >= 55)                 coef exp(coef) se(coef)      z       pDOXAZOSIN_dur -0.1473     0.863  0.11629  -1.27 2.1e-01NUMDRUGS       0.0104     1.010  0.00926   1.12 2.6e-01MMSE          -0.1513     0.860  0.01207 -12.53 0.0e+00EDUX           0.0444     1.045  0.01012   4.38 1.2e-05APOE2         -0.2459     0.782  0.11717  -2.10 3.6e-02SEX           -0.1319     0.876  0.09769  -1.35 1.8e-01APOE4          0.2401     1.271  0.20353   1.18 2.4e-01SEX:APOE4      0.2440     1.276  0.13072   1.87 6.2e-02Likelihood ratio test=262  on 8 df, p=0  n= 2583, number of events= 964    (7 observations deleted due to missingness)
+0.205211706924058
+-0.14731974457716
+There were 50 or more warnings (use warnings() to see the first 50)

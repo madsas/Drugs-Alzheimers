@@ -1,0 +1,10 @@
+Loading required package: survival
+Loading required package: splines
+ERGOCALCIFEROL
+loading table from: /afs/.ir.stanford.edu/users/s/a/sasidhar/naccdataset/greicius_project/drug_conversion.RData
+computing drug users and usage duration
+ERGOCALCIFEROL
+Call:coxph(formula = mysurv ~ DOXAZOSIN_dur + NUMDRUGS + MMSE + EDUX +     APOE2 + SEX * APOE4, data = mydata.use, subset = AGE >= 55)                  coef exp(coef) se(coef)       z       pDOXAZOSIN_dur -0.42484     0.654  0.04655 -9.1273 0.0e+00NUMDRUGS       0.02967     1.030  0.00912  3.2526 1.1e-03MMSE          -0.15308     0.858  0.02059 -7.4349 1.0e-13EDUX          -0.00439     0.996  0.01084 -0.4051 6.9e-01APOE2         -0.02965     0.971  0.08778 -0.3378 7.4e-01SEX           -0.19387     0.824  0.07967 -2.4334 1.5e-02APOE4         -0.00938     0.991  0.23039 -0.0407 9.7e-01SEX:APOE4      0.28526     1.330  0.13550  2.1052 3.5e-02Likelihood ratio test=252  on 8 df, p=0  n= 5345, number of events= 1048    (28 observations deleted due to missingness)
+0
+-0.424838352190328
+There were 50 or more warnings (use warnings() to see the first 50)

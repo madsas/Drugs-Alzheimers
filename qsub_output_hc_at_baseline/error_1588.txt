@@ -1,0 +1,10 @@
+Loading required package: survival
+Loading required package: splines
+ALLOPURINOL
+loading table from: /afs/.ir.stanford.edu/users/s/a/sasidhar/naccdataset/greicius_project/drug_conversion.RData
+computing drug users and usage duration
+ALLOPURINOL
+Call:coxph(formula = mysurv ~ DOXAZOSIN_dur + NUMDRUGS + MMSE + EDUX +     APOE2 + SEX * APOE4, data = mydata.use, subset = AGE >= 55)                  coef exp(coef) se(coef)       z       pDOXAZOSIN_dur -0.14984     0.861  0.07281 -2.0581 4.0e-02NUMDRUGS       0.02835     1.029  0.00908  3.1234 1.8e-03MMSE          -0.15231     0.859  0.02041 -7.4618 8.5e-14EDUX          -0.01129     0.989  0.01087 -1.0387 3.0e-01APOE2         -0.05568     0.946  0.08782 -0.6340 5.3e-01SEX           -0.25745     0.773  0.07980 -3.2260 1.3e-03APOE4          0.00884     1.009  0.23040  0.0384 9.7e-01SEX:APOE4      0.28256     1.327  0.13552  2.0850 3.7e-02Likelihood ratio test=145  on 8 df, p=0  n= 5345, number of events= 1048    (28 observations deleted due to missingness)
+0.0395797619100353
+-0.14984316032382
+There were 50 or more warnings (use warnings() to see the first 50)

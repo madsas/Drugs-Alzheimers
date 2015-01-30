@@ -1,0 +1,19 @@
+MODAFINIL
+Call:
+coxph(formula = mysurv ~ DOXAZOSIN_dur + NUMDRUGS + MMSE + EDUX + 
+    APOE2 + SEX * APOE4, data = mydata.use, subset = AGE >= 55)
+
+
+                 coef exp(coef) se(coef)       z       p
+DOXAZOSIN_dur -0.1100     0.896  0.11066  -0.994 0.32000
+NUMDRUGS       0.0239     1.024  0.00640   3.739 0.00018
+MMSE          -0.1921     0.825  0.00928 -20.700 0.00000
+EDUX           0.0229     1.023  0.00736   3.112 0.00190
+APOE2         -0.1410     0.868  0.06987  -2.019 0.04400
+SEX           -0.2276     0.796  0.06090  -3.737 0.00019
+APOE4          0.2404     1.272  0.14794   1.625 0.10000
+SEX:APOE4      0.2301     1.259  0.09068   2.537 0.01100
+
+Likelihood ratio test=662  on 8 df, p=0  n= 7928, number of events= 2012 
+   (35 observations deleted due to missingness)
+CHONDROITIN/GLUCOSAMINE/METHYLSULFONYLMETHANE

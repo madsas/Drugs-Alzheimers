@@ -1,0 +1,10 @@
+Loading required package: survival
+Loading required package: splines
+MAGNESIUM OXIDE
+loading table from: /afs/.ir.stanford.edu/users/s/a/sasidhar/naccdataset/greicius_project/drug_conversion.RData
+computing drug users and usage duration
+MAGNESIUM OXIDE
+Call:coxph(formula = mysurv ~ DOXAZOSIN_dur + NUMDRUGS + MMSE + EDUX +     APOE2 + SEX * APOE4, data = mydata.use, subset = AGE >= 55)                 coef exp(coef) se(coef)      z       pDOXAZOSIN_dur -0.3107     0.733  0.16153 -1.924 5.4e-02NUMDRUGS       0.0271     1.027  0.00907  2.986 2.8e-03MMSE          -0.1519     0.859  0.02043 -7.436 1.0e-13EDUX          -0.0112     0.989  0.01087 -1.026 3.1e-01APOE2         -0.0582     0.943  0.08785 -0.662 5.1e-01SEX           -0.2364     0.789  0.07958 -2.970 3.0e-03APOE4          0.0433     1.044  0.23060  0.188 8.5e-01SEX:APOE4      0.2653     1.304  0.13560  1.956 5.0e-02Likelihood ratio test=145  on 8 df, p=0  n= 5345, number of events= 1048    (28 observations deleted due to missingness)
+0.0543855869981227
+-0.310738607926755
+There were 50 or more warnings (use warnings() to see the first 50)

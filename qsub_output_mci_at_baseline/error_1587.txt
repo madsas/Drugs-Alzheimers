@@ -1,0 +1,10 @@
+Loading required package: survival
+Loading required package: splines
+DULOXETINE
+loading table from: /afs/.ir.stanford.edu/users/s/a/sasidhar/naccdataset/greicius_project/drug_conversion.RData
+computing drug users and usage duration
+DULOXETINE
+Call:coxph(formula = mysurv ~ DOXAZOSIN_dur + NUMDRUGS + MMSE + EDUX +     APOE2 + SEX * APOE4, data = mydata.use, subset = AGE >= 55)                  coef exp(coef) se(coef)       z       pDOXAZOSIN_dur -0.07082     0.932  0.10616  -0.667 5.0e-01NUMDRUGS       0.00995     1.010  0.00926   1.074 2.8e-01MMSE          -0.15142     0.859  0.01207 -12.540 0.0e+00EDUX           0.04463     1.046  0.01013   4.404 1.1e-05APOE2         -0.24857     0.780  0.11717  -2.121 3.4e-02SEX           -0.12763     0.880  0.09774  -1.306 1.9e-01APOE4          0.24705     1.280  0.20346   1.214 2.2e-01SEX:APOE4      0.23857     1.269  0.13069   1.826 6.8e-02Likelihood ratio test=260  on 8 df, p=0  n= 2583, number of events= 964    (7 observations deleted due to missingness)
+0.50471274482344
+-0.0708182296926711
+There were 50 or more warnings (use warnings() to see the first 50)

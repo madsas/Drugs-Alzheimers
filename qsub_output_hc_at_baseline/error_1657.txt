@@ -1,0 +1,10 @@
+Loading required package: survival
+Loading required package: splines
+ATENOLOL
+loading table from: /afs/.ir.stanford.edu/users/s/a/sasidhar/naccdataset/greicius_project/drug_conversion.RData
+computing drug users and usage duration
+ATENOLOL
+Call:coxph(formula = mysurv ~ DOXAZOSIN_dur + NUMDRUGS + MMSE + EDUX +     APOE2 + SEX * APOE4, data = mydata.use, subset = AGE >= 55)                 coef exp(coef) se(coef)      z       pDOXAZOSIN_dur -0.1014     0.904  0.03133 -3.237 1.2e-03NUMDRUGS       0.0285     1.029  0.00902  3.166 1.5e-03MMSE          -0.1523     0.859  0.02035 -7.483 7.3e-14EDUX          -0.0120     0.988  0.01083 -1.111 2.7e-01APOE2         -0.0578     0.944  0.08781 -0.658 5.1e-01SEX           -0.2357     0.790  0.07953 -2.964 3.0e-03APOE4          0.0287     1.029  0.23049  0.125 9.0e-01SEX:APOE4      0.2758     1.318  0.13551  2.035 4.2e-02Likelihood ratio test=152  on 8 df, p=0  n= 5345, number of events= 1048    (28 observations deleted due to missingness)
+0.00120634975252576
+-0.101427187029327
+There were 50 or more warnings (use warnings() to see the first 50)

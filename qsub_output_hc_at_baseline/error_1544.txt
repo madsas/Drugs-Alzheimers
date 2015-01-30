@@ -1,0 +1,10 @@
+Loading required package: survival
+Loading required package: splines
+DUTASTERIDE
+loading table from: /afs/.ir.stanford.edu/users/s/a/sasidhar/naccdataset/greicius_project/drug_conversion.RData
+computing drug users and usage duration
+DUTASTERIDE
+Call:coxph(formula = mysurv ~ DOXAZOSIN_dur + NUMDRUGS + MMSE + EDUX +     APOE2 + SEX * APOE4, data = mydata.use, subset = AGE >= 55)                 coef exp(coef) se(coef)      z       pDOXAZOSIN_dur -0.3632     0.695  0.15347 -2.366 1.8e-02NUMDRUGS       0.0277     1.028  0.00904  3.065 2.2e-03MMSE          -0.1539     0.857  0.02040 -7.545 4.5e-14EDUX          -0.0107     0.989  0.01091 -0.984 3.2e-01APOE2         -0.0486     0.953  0.08788 -0.553 5.8e-01SEX           -0.2613     0.770  0.07975 -3.276 1.1e-03APOE4          0.0530     1.054  0.23060  0.230 8.2e-01SEX:APOE4      0.2624     1.300  0.13553  1.936 5.3e-02Likelihood ratio test=149  on 8 df, p=0  n= 5345, number of events= 1048    (28 observations deleted due to missingness)
+0.0179633437129306
+-0.363161962548824
+There were 50 or more warnings (use warnings() to see the first 50)

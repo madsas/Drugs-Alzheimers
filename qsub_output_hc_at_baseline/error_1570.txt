@@ -1,0 +1,10 @@
+Loading required package: survival
+Loading required package: splines
+IBANDRONATE
+loading table from: /afs/.ir.stanford.edu/users/s/a/sasidhar/naccdataset/greicius_project/drug_conversion.RData
+computing drug users and usage duration
+IBANDRONATE
+Call:coxph(formula = mysurv ~ DOXAZOSIN_dur + NUMDRUGS + MMSE + EDUX +     APOE2 + SEX * APOE4, data = mydata.use, subset = AGE >= 55)                 coef exp(coef) se(coef)       z       pDOXAZOSIN_dur -0.1201     0.887  0.10037 -1.1968 2.3e-01NUMDRUGS       0.0263     1.027  0.00904  2.9068 3.7e-03MMSE          -0.1527     0.858  0.02044 -7.4701 8.0e-14EDUX          -0.0120     0.988  0.01087 -1.1046 2.7e-01APOE2         -0.0541     0.947  0.08783 -0.6163 5.4e-01SEX           -0.2329     0.792  0.07976 -2.9197 3.5e-03APOE4          0.0168     1.017  0.23041  0.0731 9.4e-01SEX:APOE4      0.2784     1.321  0.13552  2.0544 4.0e-02Likelihood ratio test=141  on 8 df, p=0  n= 5345, number of events= 1048    (28 observations deleted due to missingness)
+0.231399516271915
+-0.120114084206236
+There were 50 or more warnings (use warnings() to see the first 50)

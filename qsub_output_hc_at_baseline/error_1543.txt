@@ -1,0 +1,10 @@
+Loading required package: survival
+Loading required package: splines
+BIOTIN
+loading table from: /afs/.ir.stanford.edu/users/s/a/sasidhar/naccdataset/greicius_project/drug_conversion.RData
+computing drug users and usage duration
+BIOTIN
+Call:coxph(formula = mysurv ~ DOXAZOSIN_dur + NUMDRUGS + MMSE + EDUX +     APOE2 + SEX * APOE4, data = mydata.use, subset = AGE >= 55)                  coef exp(coef) se(coef)       z       pDOXAZOSIN_dur -0.52343     0.592  0.22075 -2.3711 1.8e-02NUMDRUGS       0.02727     1.028  0.00906  3.0097 2.6e-03MMSE          -0.15414     0.857  0.02050 -7.5196 5.5e-14EDUX          -0.01129     0.989  0.01086 -1.0391 3.0e-01APOE2         -0.05474     0.947  0.08783 -0.6232 5.3e-01SEX           -0.23250     0.793  0.07957 -2.9219 3.5e-03APOE4          0.00338     1.003  0.23042  0.0147 9.9e-01SEX:APOE4      0.28584     1.331  0.13552  2.1092 3.5e-02Likelihood ratio test=148  on 8 df, p=0  n= 5345, number of events= 1048    (28 observations deleted due to missingness)
+0.0177343331017807
+-0.523428914038121
+There were 50 or more warnings (use warnings() to see the first 50)

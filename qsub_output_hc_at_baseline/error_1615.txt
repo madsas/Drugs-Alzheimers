@@ -1,0 +1,10 @@
+Loading required package: survival
+Loading required package: splines
+FLUTICASONE NASAL
+loading table from: /afs/.ir.stanford.edu/users/s/a/sasidhar/naccdataset/greicius_project/drug_conversion.RData
+computing drug users and usage duration
+FLUTICASONE NASAL
+Call:coxph(formula = mysurv ~ DOXAZOSIN_dur + NUMDRUGS + MMSE + EDUX +     APOE2 + SEX * APOE4, data = mydata.use, subset = AGE >= 55)                  coef exp(coef) se(coef)       z       pDOXAZOSIN_dur -0.20886     0.812  0.08087 -2.5826 9.8e-03NUMDRUGS       0.02809     1.028  0.00905  3.1025 1.9e-03MMSE          -0.15301     0.858  0.02042 -7.4931 6.7e-14EDUX          -0.01022     0.990  0.01088 -0.9397 3.5e-01APOE2         -0.05635     0.945  0.08782 -0.6417 5.2e-01SEX           -0.23979     0.787  0.07953 -3.0151 2.6e-03APOE4          0.00744     1.007  0.23039  0.0323 9.7e-01SEX:APOE4      0.28594     1.331  0.13550  2.1102 3.5e-02Likelihood ratio test=148  on 8 df, p=0  n= 5345, number of events= 1048    (28 observations deleted due to missingness)
+0.00980513349701639
+-0.208857446336848
+There were 50 or more warnings (use warnings() to see the first 50)

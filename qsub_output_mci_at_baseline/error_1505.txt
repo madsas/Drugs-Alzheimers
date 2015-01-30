@@ -1,0 +1,10 @@
+Loading required package: survival
+Loading required package: splines
+AZELASTINE NASAL
+loading table from: /afs/.ir.stanford.edu/users/s/a/sasidhar/naccdataset/greicius_project/drug_conversion.RData
+computing drug users and usage duration
+AZELASTINE NASAL
+Call:coxph(formula = mysurv ~ DOXAZOSIN_dur + NUMDRUGS + MMSE + EDUX +     APOE2 + SEX * APOE4, data = mydata.use, subset = AGE >= 55)                 coef exp(coef) se(coef)      z       pDOXAZOSIN_dur -0.3648     0.694  0.27272  -1.34 0.18000NUMDRUGS       0.0108     1.011  0.00929   1.16 0.25000MMSE          -0.1516     0.859  0.01208 -12.55 0.00000EDUX           0.0447     1.046  0.01013   4.41 0.00001APOE2         -0.2502     0.779  0.11717  -2.14 0.03300SEX           -0.1287     0.879  0.09771  -1.32 0.19000APOE4          0.2439     1.276  0.20345   1.20 0.23000SEX:APOE4      0.2397     1.271  0.13068   1.83 0.06700Likelihood ratio test=263  on 8 df, p=0  n= 2583, number of events= 964    (7 observations deleted due to missingness)
+0.180974404680689
+-0.364831164494829
+There were 50 or more warnings (use warnings() to see the first 50)

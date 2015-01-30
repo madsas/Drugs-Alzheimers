@@ -1,0 +1,10 @@
+Loading required package: survival
+Loading required package: splines
+GEMFIBROZIL
+loading table from: /afs/.ir.stanford.edu/users/s/a/sasidhar/naccdataset/greicius_project/drug_conversion.RData
+computing drug users and usage duration
+GEMFIBROZIL
+Call:coxph(formula = mysurv ~ DOXAZOSIN_dur + NUMDRUGS + MMSE + EDUX +     APOE2 + SEX * APOE4, data = mydata.use, subset = AGE >= 55)                  coef exp(coef) se(coef)       z       pDOXAZOSIN_dur  0.08866     1.093  0.16541   0.536 5.9e-01NUMDRUGS       0.00964     1.010  0.00927   1.041 3.0e-01MMSE          -0.15170     0.859  0.01208 -12.561 0.0e+00EDUX           0.04446     1.045  0.01013   4.388 1.1e-05APOE2         -0.25002     0.779  0.11730  -2.131 3.3e-02SEX           -0.12783     0.880  0.09776  -1.308 1.9e-01APOE4          0.25028     1.284  0.20350   1.230 2.2e-01SEX:APOE4      0.23653     1.267  0.13070   1.810 7.0e-02Likelihood ratio test=260  on 8 df, p=0  n= 2583, number of events= 964    (7 observations deleted due to missingness)
+0.591963110051804
+0.0886598328698916
+There were 50 or more warnings (use warnings() to see the first 50)

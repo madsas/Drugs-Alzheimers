@@ -1,0 +1,10 @@
+Loading required package: survival
+Loading required package: splines
+EZETIMIBE
+loading table from: /afs/.ir.stanford.edu/users/s/a/sasidhar/naccdataset/greicius_project/drug_conversion.RData
+computing drug users and usage duration
+EZETIMIBE
+Call:coxph(formula = mysurv ~ DOXAZOSIN_dur + NUMDRUGS + MMSE + EDUX +     APOE2 + SEX * APOE4, data = mydata.use, subset = AGE >= 55)                 coef exp(coef) se(coef)       z       pDOXAZOSIN_dur -0.0719     0.931  0.04480 -1.6057 1.1e-01NUMDRUGS       0.0281     1.029  0.00909  3.0971 2.0e-03MMSE          -0.1537     0.858  0.02045 -7.5133 5.8e-14EDUX          -0.0110     0.989  0.01088 -1.0150 3.1e-01APOE2         -0.0582     0.943  0.08787 -0.6620 5.1e-01SEX           -0.2432     0.784  0.07953 -3.0581 2.2e-03APOE4          0.0183     1.018  0.23041  0.0795 9.4e-01SEX:APOE4      0.2787     1.321  0.13552  2.0565 4.0e-02Likelihood ratio test=142  on 8 df, p=0  n= 5345, number of events= 1048    (28 observations deleted due to missingness)
+0.108349005579951
+-0.0719310039820278
+There were 50 or more warnings (use warnings() to see the first 50)

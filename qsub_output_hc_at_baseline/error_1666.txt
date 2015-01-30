@@ -1,0 +1,10 @@
+Loading required package: survival
+Loading required package: splines
+CALCIUM CARBONATE
+loading table from: /afs/.ir.stanford.edu/users/s/a/sasidhar/naccdataset/greicius_project/drug_conversion.RData
+computing drug users and usage duration
+CALCIUM CARBONATE
+Call:coxph(formula = mysurv ~ DOXAZOSIN_dur + NUMDRUGS + MMSE + EDUX +     APOE2 + SEX * APOE4, data = mydata.use, subset = AGE >= 55)                 coef exp(coef) se(coef)       z       pDOXAZOSIN_dur -0.3289     0.720  0.05145 -6.3916 1.6e-10NUMDRUGS       0.0254     1.026  0.00907  2.8023 5.1e-03MMSE          -0.1436     0.866  0.02039 -7.0411 1.9e-12EDUX          -0.0103     0.990  0.01096 -0.9404 3.5e-01APOE2         -0.0430     0.958  0.08779 -0.4902 6.2e-01SEX           -0.1882     0.828  0.07973 -2.3606 1.8e-02APOE4          0.0224     1.023  0.23045  0.0973 9.2e-01SEX:APOE4      0.2782     1.321  0.13551  2.0527 4.0e-02Likelihood ratio test=192  on 8 df, p=0  n= 5345, number of events= 1048    (28 observations deleted due to missingness)
+1.64133706626046e-10
+-0.328856186326496
+There were 50 or more warnings (use warnings() to see the first 50)

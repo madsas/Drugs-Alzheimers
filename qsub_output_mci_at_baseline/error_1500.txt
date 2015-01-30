@@ -1,0 +1,10 @@
+Loading required package: survival
+Loading required package: splines
+ASPIRIN-DIPYRIDAMOLE
+loading table from: /afs/.ir.stanford.edu/users/s/a/sasidhar/naccdataset/greicius_project/drug_conversion.RData
+computing drug users and usage duration
+ASPIRIN-DIPYRIDAMOLE
+Call:coxph(formula = mysurv ~ DOXAZOSIN_dur + NUMDRUGS + MMSE + EDUX +     APOE2 + SEX * APOE4, data = mydata.use, subset = AGE >= 55)                  coef exp(coef) se(coef)      z       pDOXAZOSIN_dur -0.16082     0.851  0.09247  -1.74 8.2e-02NUMDRUGS       0.00952     1.010  0.00925   1.03 3.0e-01MMSE          -0.15115     0.860  0.01207 -12.53 0.0e+00EDUX           0.04420     1.045  0.01012   4.37 1.3e-05APOE2         -0.24342     0.784  0.11716  -2.08 3.8e-02SEX           -0.12992     0.878  0.09769  -1.33 1.8e-01APOE4          0.25456     1.290  0.20347   1.25 2.1e-01SEX:APOE4      0.23537     1.265  0.13064   1.80 7.2e-02Likelihood ratio test=264  on 8 df, p=0  n= 2583, number of events= 964    (7 observations deleted due to missingness)
+0.0820192505844888
+-0.160820278851343
+There were 50 or more warnings (use warnings() to see the first 50)

@@ -1,0 +1,10 @@
+Loading required package: survival
+Loading required package: splines
+SERTRALINE
+loading table from: /afs/.ir.stanford.edu/users/s/a/sasidhar/naccdataset/greicius_project/drug_conversion.RData
+computing drug users and usage duration
+SERTRALINE
+Call:coxph(formula = mysurv ~ DOXAZOSIN_dur + NUMDRUGS + MMSE + EDUX +     APOE2 + SEX * APOE4, data = mydata.use, subset = AGE >= 55)                  coef exp(coef) se(coef)       z       pDOXAZOSIN_dur  0.02039     1.021  0.04882   0.418 6.8e-01NUMDRUGS       0.00954     1.010  0.00928   1.027 3.0e-01MMSE          -0.15175     0.859  0.01208 -12.561 0.0e+00EDUX           0.04439     1.045  0.01014   4.378 1.2e-05APOE2         -0.24679     0.781  0.11717  -2.106 3.5e-02SEX           -0.12898     0.879  0.09771  -1.320 1.9e-01APOE4          0.25134     1.286  0.20359   1.235 2.2e-01SEX:APOE4      0.23590     1.266  0.13076   1.804 7.1e-02Likelihood ratio test=260  on 8 df, p=0  n= 2583, number of events= 964    (7 observations deleted due to missingness)
+0.676222068545362
+0.0203887538448464
+There were 50 or more warnings (use warnings() to see the first 50)

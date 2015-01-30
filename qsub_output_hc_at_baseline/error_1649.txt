@@ -1,0 +1,10 @@
+Loading required package: survival
+Loading required package: splines
+CLOPIDOGREL
+loading table from: /afs/.ir.stanford.edu/users/s/a/sasidhar/naccdataset/greicius_project/drug_conversion.RData
+computing drug users and usage duration
+CLOPIDOGREL
+Call:coxph(formula = mysurv ~ DOXAZOSIN_dur + NUMDRUGS + MMSE + EDUX +     APOE2 + SEX * APOE4, data = mydata.use, subset = AGE >= 55)                 coef exp(coef) se(coef)       z       pDOXAZOSIN_dur -0.1012     0.904  0.03936 -2.5702 1.0e-02NUMDRUGS       0.0310     1.031  0.00914  3.3878 7.0e-04MMSE          -0.1526     0.858  0.02044 -7.4650 8.3e-14EDUX          -0.0121     0.988  0.01087 -1.1144 2.7e-01APOE2         -0.0517     0.950  0.08784 -0.5889 5.6e-01SEX           -0.2500     0.779  0.07958 -3.1417 1.7e-03APOE4          0.0164     1.017  0.23042  0.0714 9.4e-01SEX:APOE4      0.2756     1.317  0.13554  2.0335 4.2e-02Likelihood ratio test=147  on 8 df, p=0  n= 5345, number of events= 1048    (28 observations deleted due to missingness)
+0.0101626268260447
+-0.101173067450556
+There were 50 or more warnings (use warnings() to see the first 50)

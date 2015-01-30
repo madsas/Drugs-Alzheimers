@@ -1,0 +1,10 @@
+Loading required package: survival
+Loading required package: splines
+HYDROCODONE
+loading table from: /afs/.ir.stanford.edu/users/s/a/sasidhar/naccdataset/greicius_project/drug_conversion.RData
+computing drug users and usage duration
+HYDROCODONE
+Call:coxph(formula = mysurv ~ DOXAZOSIN_dur + NUMDRUGS + MMSE + EDUX +     APOE2 + SEX * APOE4, data = mydata.use, subset = AGE >= 55)                 coef exp(coef) se(coef)      z       pDOXAZOSIN_dur -0.2501     0.779   0.1226  -2.04 4.1e-02NUMDRUGS       0.0113     1.011   0.0093   1.22 2.2e-01MMSE          -0.1514     0.859   0.0121 -12.56 0.0e+00EDUX           0.0441     1.045   0.0101   4.34 1.4e-05APOE2         -0.2440     0.783   0.1172  -2.08 3.7e-02SEX           -0.1206     0.886   0.0978  -1.23 2.2e-01APOE4          0.2390     1.270   0.2034   1.17 2.4e-01SEX:APOE4      0.2406     1.272   0.1307   1.84 6.6e-02Likelihood ratio test=265  on 8 df, p=0  n= 2583, number of events= 964    (7 observations deleted due to missingness)
+0.0413465738775636
+-0.250129401257963
+There were 50 or more warnings (use warnings() to see the first 50)

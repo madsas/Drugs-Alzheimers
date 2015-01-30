@@ -1,0 +1,10 @@
+Loading required package: survival
+Loading required package: splines
+GABAPENTIN
+loading table from: /afs/.ir.stanford.edu/users/s/a/sasidhar/naccdataset/greicius_project/drug_conversion.RData
+computing drug users and usage duration
+GABAPENTIN
+Call:coxph(formula = mysurv ~ DOXAZOSIN_dur + NUMDRUGS + MMSE + EDUX +     APOE2 + SEX * APOE4, data = mydata.use, subset = AGE >= 55)                  coef exp(coef) se(coef)       z       pDOXAZOSIN_dur -0.25789     0.773  0.07572 -3.4057 6.6e-04NUMDRUGS       0.03058     1.031  0.00911  3.3578 7.9e-04MMSE          -0.15471     0.857  0.02041 -7.5787 3.5e-14EDUX          -0.01134     0.989  0.01089 -1.0419 3.0e-01APOE2         -0.03440     0.966  0.08790 -0.3914 7.0e-01SEX           -0.23713     0.789  0.07961 -2.9786 2.9e-03APOE4          0.00579     1.006  0.23042  0.0251 9.8e-01SEX:APOE4      0.28305     1.327  0.13550  2.0889 3.7e-02Likelihood ratio test=156  on 8 df, p=0  n= 5345, number of events= 1048    (28 observations deleted due to missingness)
+0.000659901981097333
+-0.25788770409424
+There were 50 or more warnings (use warnings() to see the first 50)

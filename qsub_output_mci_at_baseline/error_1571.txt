@@ -1,0 +1,10 @@
+Loading required package: survival
+Loading required package: splines
+VERAPAMIL
+loading table from: /afs/.ir.stanford.edu/users/s/a/sasidhar/naccdataset/greicius_project/drug_conversion.RData
+computing drug users and usage duration
+VERAPAMIL
+Call:coxph(formula = mysurv ~ DOXAZOSIN_dur + NUMDRUGS + MMSE + EDUX +     APOE2 + SEX * APOE4, data = mydata.use, subset = AGE >= 55)                 coef exp(coef) se(coef)      z       pDOXAZOSIN_dur -0.2723     0.762  0.11928  -2.28 2.2e-02NUMDRUGS       0.0115     1.012  0.00924   1.24 2.1e-01MMSE          -0.1505     0.860  0.01209 -12.45 0.0e+00EDUX           0.0442     1.045  0.01012   4.37 1.2e-05APOE2         -0.2529     0.777  0.11717  -2.16 3.1e-02SEX           -0.1249     0.883  0.09773  -1.28 2.0e-01APOE4          0.2443     1.277  0.20339   1.20 2.3e-01SEX:APOE4      0.2410     1.273  0.13068   1.84 6.5e-02Likelihood ratio test=267  on 8 df, p=0  n= 2583, number of events= 964    (7 observations deleted due to missingness)
+0.0224142796384222
+-0.272342369827108
+There were 50 or more warnings (use warnings() to see the first 50)

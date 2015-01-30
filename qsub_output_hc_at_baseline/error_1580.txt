@@ -1,0 +1,10 @@
+Loading required package: survival
+Loading required package: splines
+OLMESARTAN
+loading table from: /afs/.ir.stanford.edu/users/s/a/sasidhar/naccdataset/greicius_project/drug_conversion.RData
+computing drug users and usage duration
+OLMESARTAN
+Call:coxph(formula = mysurv ~ DOXAZOSIN_dur + NUMDRUGS + MMSE + EDUX +     APOE2 + SEX * APOE4, data = mydata.use, subset = AGE >= 55)                   coef exp(coef) se(coef)        z       pDOXAZOSIN_dur -0.210007     0.811  0.08564 -2.45227 1.4e-02NUMDRUGS       0.027162     1.028  0.00903  3.00635 2.6e-03MMSE          -0.153739     0.857  0.02044 -7.52304 5.4e-14EDUX          -0.011891     0.988  0.01088 -1.09294 2.7e-01APOE2         -0.055399     0.946  0.08785 -0.63061 5.3e-01SEX           -0.235935     0.790  0.07957 -2.96516 3.0e-03APOE4          0.000306     1.000  0.23044  0.00133 1.0e+00SEX:APOE4      0.287337     1.333  0.13553  2.12005 3.4e-02Likelihood ratio test=148  on 8 df, p=0  n= 5345, number of events= 1048    (28 observations deleted due to missingness)
+0.0141958809814395
+-0.210007442531616
+There were 50 or more warnings (use warnings() to see the first 50)

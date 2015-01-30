@@ -1,0 +1,10 @@
+Loading required package: survival
+Loading required package: splines
+ALBUTEROL-IPRATROPIUM
+loading table from: /afs/.ir.stanford.edu/users/s/a/sasidhar/naccdataset/greicius_project/drug_conversion.RData
+computing drug users and usage duration
+ALBUTEROL-IPRATROPIUM
+Call:coxph(formula = mysurv ~ DOXAZOSIN_dur + NUMDRUGS + MMSE + EDUX +     APOE2 + SEX * APOE4, data = mydata.use, subset = AGE >= 55)                 coef exp(coef) se(coef)       z       pDOXAZOSIN_dur -0.3927     0.675  0.23664 -1.6593 9.7e-02NUMDRUGS       0.0277     1.028  0.00905  3.0651 2.2e-03MMSE          -0.1538     0.857  0.02042 -7.5341 4.9e-14EDUX          -0.0121     0.988  0.01087 -1.1163 2.6e-01APOE2         -0.0514     0.950  0.08783 -0.5848 5.6e-01SEX           -0.2423     0.785  0.07956 -3.0460 2.3e-03APOE4          0.0129     1.013  0.23041  0.0561 9.6e-01SEX:APOE4      0.2805     1.324  0.13551  2.0697 3.8e-02Likelihood ratio test=144  on 8 df, p=0  n= 5345, number of events= 1048    (28 observations deleted due to missingness)
+0.0970579999315576
+-0.392658903958911
+There were 50 or more warnings (use warnings() to see the first 50)

@@ -1,0 +1,10 @@
+Loading required package: survival
+Loading required package: splines
+PRAVASTATIN
+loading table from: /afs/.ir.stanford.edu/users/s/a/sasidhar/naccdataset/greicius_project/drug_conversion.RData
+computing drug users and usage duration
+PRAVASTATIN
+Call:coxph(formula = mysurv ~ DOXAZOSIN_dur + NUMDRUGS + MMSE + EDUX +     APOE2 + SEX * APOE4, data = mydata.use, subset = AGE >= 55)                 coef exp(coef) se(coef)      z       pDOXAZOSIN_dur -0.2499     0.779  0.06629 -3.771 1.6e-04NUMDRUGS       0.0291     1.030  0.00905  3.220 1.3e-03MMSE          -0.1514     0.860  0.02041 -7.417 1.2e-13EDUX          -0.0107     0.989  0.01087 -0.988 3.2e-01APOE2         -0.0585     0.943  0.08791 -0.665 5.1e-01SEX           -0.2524     0.777  0.07956 -3.172 1.5e-03APOE4          0.0219     1.022  0.23051  0.095 9.2e-01SEX:APOE4      0.2785     1.321  0.13551  2.055 4.0e-02Likelihood ratio test=160  on 8 df, p=0  n= 5345, number of events= 1048    (28 observations deleted due to missingness)
+0.000162838968310486
+-0.249949296248145
+There were 50 or more warnings (use warnings() to see the first 50)

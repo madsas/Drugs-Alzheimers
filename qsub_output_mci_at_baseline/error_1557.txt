@@ -1,0 +1,10 @@
+Loading required package: survival
+Loading required package: splines
+RAMIPRIL
+loading table from: /afs/.ir.stanford.edu/users/s/a/sasidhar/naccdataset/greicius_project/drug_conversion.RData
+computing drug users and usage duration
+RAMIPRIL
+Call:coxph(formula = mysurv ~ DOXAZOSIN_dur + NUMDRUGS + MMSE + EDUX +     APOE2 + SEX * APOE4, data = mydata.use, subset = AGE >= 55)                  coef exp(coef) se(coef)       z       pDOXAZOSIN_dur  0.07840     1.082  0.08279   0.947 0.34000NUMDRUGS       0.00968     1.010  0.00927   1.044 0.30000MMSE          -0.15167     0.859  0.01208 -12.557 0.00000EDUX           0.04470     1.046  0.01014   4.407 0.00001APOE2         -0.24544     0.782  0.11719  -2.094 0.03600SEX           -0.12203     0.885  0.09812  -1.244 0.21000APOE4          0.26091     1.298  0.20407   1.279 0.20000SEX:APOE4      0.23159     1.261  0.13091   1.769 0.07700Likelihood ratio test=261  on 8 df, p=0  n= 2583, number of events= 964    (7 observations deleted due to missingness)
+0.343628866522318
+0.0784009840930508
+There were 50 or more warnings (use warnings() to see the first 50)

@@ -1,0 +1,10 @@
+Loading required package: survival
+Loading required package: splines
+DORZOLAMIDE-TIMOLOL OPHTHALMIC
+loading table from: /afs/.ir.stanford.edu/users/s/a/sasidhar/naccdataset/greicius_project/drug_conversion.RData
+computing drug users and usage duration
+DORZOLAMIDE-TIMOLOL OPHTHALMIC
+Call:coxph(formula = mysurv ~ DOXAZOSIN_dur + NUMDRUGS + MMSE + EDUX +     APOE2 + SEX * APOE4, data = mydata.use, subset = AGE >= 55)                 coef exp(coef) se(coef)       z       pDOXAZOSIN_dur -0.0263     0.974  0.09030 -0.2911 7.7e-01NUMDRUGS       0.0264     1.027  0.00905  2.9183 3.5e-03MMSE          -0.1534     0.858  0.02044 -7.5048 6.2e-14EDUX          -0.0117     0.988  0.01087 -1.0802 2.8e-01APOE2         -0.0527     0.949  0.08784 -0.6000 5.5e-01SEX           -0.2417     0.785  0.07957 -3.0370 2.4e-03APOE4          0.0119     1.012  0.23047  0.0515 9.6e-01SEX:APOE4      0.2826     1.327  0.13556  2.0850 3.7e-02Likelihood ratio test=140  on 8 df, p=0  n= 5345, number of events= 1048    (28 observations deleted due to missingness)
+0.770943760978763
+-0.0262890417602602
+There were 50 or more warnings (use warnings() to see the first 50)

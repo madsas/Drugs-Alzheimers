@@ -1,0 +1,10 @@
+Loading required package: survival
+Loading required package: splines
+TRAMADOL
+loading table from: /afs/.ir.stanford.edu/users/s/a/sasidhar/naccdataset/greicius_project/drug_conversion.RData
+computing drug users and usage duration
+TRAMADOL
+Call:coxph(formula = mysurv ~ DOXAZOSIN_dur + NUMDRUGS + MMSE + EDUX +     APOE2 + SEX * APOE4, data = mydata.use, subset = AGE >= 55)                 coef exp(coef) se(coef)      z       pDOXAZOSIN_dur -0.4157     0.660  0.16995  -2.45 1.4e-02NUMDRUGS       0.0124     1.012  0.00931   1.33 1.8e-01MMSE          -0.1514     0.860  0.01206 -12.55 0.0e+00EDUX           0.0440     1.045  0.01013   4.34 1.4e-05APOE2         -0.2316     0.793  0.11729  -1.97 4.8e-02SEX           -0.1200     0.887  0.09783  -1.23 2.2e-01APOE4          0.2438     1.276  0.20339   1.20 2.3e-01SEX:APOE4      0.2413     1.273  0.13068   1.85 6.5e-02Likelihood ratio test=268  on 8 df, p=0  n= 2583, number of events= 964    (7 observations deleted due to missingness)
+0.01444964837679
+-0.415685264730776
+There were 50 or more warnings (use warnings() to see the first 50)

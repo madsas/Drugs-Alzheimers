@@ -1,0 +1,10 @@
+Loading required package: survival
+Loading required package: splines
+TRAVOPROST OPHTHALMIC
+loading table from: /afs/.ir.stanford.edu/users/s/a/sasidhar/naccdataset/greicius_project/drug_conversion.RData
+computing drug users and usage duration
+TRAVOPROST OPHTHALMIC
+Call:coxph(formula = mysurv ~ DOXAZOSIN_dur + NUMDRUGS + MMSE + EDUX +     APOE2 + SEX * APOE4, data = mydata.use, subset = AGE >= 55)                 coef exp(coef) se(coef)      z       pDOXAZOSIN_dur -0.5169     0.596  0.24501  -2.11 3.5e-02NUMDRUGS       0.0107     1.011  0.00928   1.15 2.5e-01MMSE          -0.1509     0.860  0.01209 -12.48 0.0e+00EDUX           0.0442     1.045  0.01013   4.36 1.3e-05APOE2         -0.2456     0.782  0.11716  -2.10 3.6e-02SEX           -0.1273     0.880  0.09777  -1.30 1.9e-01APOE4          0.2632     1.301  0.20348   1.29 2.0e-01SEX:APOE4      0.2251     1.252  0.13073   1.72 8.5e-02Likelihood ratio test=267  on 8 df, p=0  n= 2583, number of events= 964    (7 observations deleted due to missingness)
+0.0348923729611029
+-0.516877034326169
+There were 50 or more warnings (use warnings() to see the first 50)

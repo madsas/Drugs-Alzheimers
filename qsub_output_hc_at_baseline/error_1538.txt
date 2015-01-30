@@ -1,0 +1,10 @@
+Loading required package: survival
+Loading required package: splines
+SILDENAFIL
+loading table from: /afs/.ir.stanford.edu/users/s/a/sasidhar/naccdataset/greicius_project/drug_conversion.RData
+computing drug users and usage duration
+SILDENAFIL
+Call:coxph(formula = mysurv ~ DOXAZOSIN_dur + NUMDRUGS + MMSE + EDUX +     APOE2 + SEX * APOE4, data = mydata.use, subset = AGE >= 55)                  coef exp(coef) se(coef)       z       pDOXAZOSIN_dur -0.31528     0.730  0.17760 -1.7752 7.6e-02NUMDRUGS       0.02647     1.027  0.00904  2.9275 3.4e-03MMSE          -0.15259     0.858  0.02043 -7.4681 8.1e-14EDUX          -0.01142     0.989  0.01086 -1.0510 2.9e-01APOE2         -0.05258     0.949  0.08784 -0.5986 5.5e-01SEX           -0.25996     0.771  0.07981 -3.2573 1.1e-03APOE4         -0.00775     0.992  0.23050 -0.0336 9.7e-01SEX:APOE4      0.29211     1.339  0.13554  2.1551 3.1e-02Likelihood ratio test=144  on 8 df, p=0  n= 5345, number of events= 1048    (28 observations deleted due to missingness)
+0.0758577797024134
+-0.315279441264593
+There were 50 or more warnings (use warnings() to see the first 50)

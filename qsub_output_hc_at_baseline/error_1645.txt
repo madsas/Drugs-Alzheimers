@@ -1,0 +1,10 @@
+Loading required package: survival
+Loading required package: splines
+UBIQUINONE
+loading table from: /afs/.ir.stanford.edu/users/s/a/sasidhar/naccdataset/greicius_project/drug_conversion.RData
+computing drug users and usage duration
+UBIQUINONE
+Call:coxph(formula = mysurv ~ DOXAZOSIN_dur + NUMDRUGS + MMSE + EDUX +     APOE2 + SEX * APOE4, data = mydata.use, subset = AGE >= 55)                 coef exp(coef) se(coef)       z       pDOXAZOSIN_dur -0.2105     0.810  0.08075 -2.6069 9.1e-03NUMDRUGS       0.0269     1.027  0.00908  2.9683 3.0e-03MMSE          -0.1512     0.860  0.02044 -7.3956 1.4e-13EDUX          -0.0111     0.989  0.01085 -1.0232 3.1e-01APOE2         -0.0648     0.937  0.08790 -0.7375 4.6e-01SEX           -0.2400     0.787  0.07957 -3.0164 2.6e-03APOE4          0.0165     1.017  0.23042  0.0714 9.4e-01SEX:APOE4      0.2753     1.317  0.13553  2.0315 4.2e-02Likelihood ratio test=148  on 8 df, p=0  n= 5345, number of events= 1048    (28 observations deleted due to missingness)
+0.00913578746709565
+-0.210511266425309
+There were 50 or more warnings (use warnings() to see the first 50)

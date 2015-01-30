@@ -1,0 +1,10 @@
+Loading required package: survival
+Loading required package: splines
+MECLIZINE
+loading table from: /afs/.ir.stanford.edu/users/s/a/sasidhar/naccdataset/greicius_project/drug_conversion.RData
+computing drug users and usage duration
+MECLIZINE
+Call:coxph(formula = mysurv ~ DOXAZOSIN_dur + NUMDRUGS + MMSE + EDUX +     APOE2 + SEX * APOE4, data = mydata.use, subset = AGE >= 55)                  coef exp(coef) se(coef)       z       pDOXAZOSIN_dur -0.01453     0.986  0.12620  -0.115 9.1e-01NUMDRUGS       0.00981     1.010  0.00926   1.060 2.9e-01MMSE          -0.15157     0.859  0.01208 -12.545 0.0e+00EDUX           0.04447     1.045  0.01014   4.386 1.2e-05APOE2         -0.24741     0.781  0.11716  -2.112 3.5e-02SEX           -0.12944     0.879  0.09774  -1.324 1.9e-01APOE4          0.24798     1.281  0.20345   1.219 2.2e-01SEX:APOE4      0.23783     1.268  0.13067   1.820 6.9e-02Likelihood ratio test=260  on 8 df, p=0  n= 2583, number of events= 964    (7 observations deleted due to missingness)
+0.90831269627017
+-0.0145337581386526
+There were 50 or more warnings (use warnings() to see the first 50)

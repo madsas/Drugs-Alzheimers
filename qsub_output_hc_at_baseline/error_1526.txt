@@ -1,0 +1,10 @@
+Loading required package: survival
+Loading required package: splines
+PRAMIPEXOLE
+loading table from: /afs/.ir.stanford.edu/users/s/a/sasidhar/naccdataset/greicius_project/drug_conversion.RData
+computing drug users and usage duration
+PRAMIPEXOLE
+Call:coxph(formula = mysurv ~ DOXAZOSIN_dur + NUMDRUGS + MMSE + EDUX +     APOE2 + SEX * APOE4, data = mydata.use, subset = AGE >= 55)                 coef exp(coef) se(coef)      z       pDOXAZOSIN_dur  0.1238     1.132  0.07566  1.637 1.0e-01NUMDRUGS       0.0252     1.026  0.00909  2.773 5.6e-03MMSE          -0.1542     0.857  0.02044 -7.545 4.5e-14EDUX          -0.0119     0.988  0.01088 -1.092 2.8e-01APOE2         -0.0513     0.950  0.08785 -0.584 5.6e-01SEX           -0.2406     0.786  0.07955 -3.024 2.5e-03APOE4          0.0203     1.020  0.23047  0.088 9.3e-01SEX:APOE4      0.2792     1.322  0.13553  2.060 3.9e-02Likelihood ratio test=142  on 8 df, p=0  n= 5345, number of events= 1048    (28 observations deleted due to missingness)
+0.101638116150253
+0.123848191824352
+There were 50 or more warnings (use warnings() to see the first 50)

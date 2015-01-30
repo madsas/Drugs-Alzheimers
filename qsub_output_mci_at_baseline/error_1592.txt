@@ -1,0 +1,10 @@
+Loading required package: survival
+Loading required package: splines
+PREDNISONE
+loading table from: /afs/.ir.stanford.edu/users/s/a/sasidhar/naccdataset/greicius_project/drug_conversion.RData
+computing drug users and usage duration
+PREDNISONE
+Call:coxph(formula = mysurv ~ DOXAZOSIN_dur + NUMDRUGS + MMSE + EDUX +     APOE2 + SEX * APOE4, data = mydata.use, subset = AGE >= 55)                  coef exp(coef) se(coef)       z       pDOXAZOSIN_dur  0.05784     1.060  0.12512   0.462 6.4e-01NUMDRUGS       0.00949     1.010  0.00928   1.022 3.1e-01MMSE          -0.15157     0.859  0.01208 -12.551 0.0e+00EDUX           0.04444     1.045  0.01013   4.385 1.2e-05APOE2         -0.24573     0.782  0.11722  -2.096 3.6e-02SEX           -0.12838     0.880  0.09772  -1.314 1.9e-01APOE4          0.25015     1.284  0.20350   1.229 2.2e-01SEX:APOE4      0.23728     1.268  0.13068   1.816 6.9e-02Likelihood ratio test=260  on 8 df, p=0  n= 2583, number of events= 964    (7 observations deleted due to missingness)
+0.643901455413936
+0.0578390298522879
+There were 50 or more warnings (use warnings() to see the first 50)

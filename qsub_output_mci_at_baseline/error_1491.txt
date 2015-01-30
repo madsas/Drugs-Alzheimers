@@ -1,0 +1,10 @@
+Loading required package: survival
+Loading required package: splines
+DARIFENACIN
+loading table from: /afs/.ir.stanford.edu/users/s/a/sasidhar/naccdataset/greicius_project/drug_conversion.RData
+computing drug users and usage duration
+DARIFENACIN
+Call:coxph(formula = mysurv ~ DOXAZOSIN_dur + NUMDRUGS + MMSE + EDUX +     APOE2 + SEX * APOE4, data = mydata.use, subset = AGE >= 55)                  coef exp(coef) se(coef)        z       pDOXAZOSIN_dur  0.00611     1.006  0.18018   0.0339 9.7e-01NUMDRUGS       0.00979     1.010  0.00927   1.0564 2.9e-01MMSE          -0.15162     0.859  0.01207 -12.5566 0.0e+00EDUX           0.04449     1.045  0.01014   4.3880 1.1e-05APOE2         -0.24750     0.781  0.11721  -2.1116 3.5e-02SEX           -0.12908     0.879  0.09774  -1.3207 1.9e-01APOE4          0.24850     1.282  0.20358   1.2207 2.2e-01SEX:APOE4      0.23764     1.268  0.13072   1.8180 6.9e-02Likelihood ratio test=260  on 8 df, p=0  n= 2583, number of events= 964    (7 observations deleted due to missingness)
+0.972934052304513
+0.0061131331025507
+There were 50 or more warnings (use warnings() to see the first 50)

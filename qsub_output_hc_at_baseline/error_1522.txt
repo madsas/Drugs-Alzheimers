@@ -1,0 +1,10 @@
+Loading required package: survival
+Loading required package: splines
+IPRATROPIUM
+loading table from: /afs/.ir.stanford.edu/users/s/a/sasidhar/naccdataset/greicius_project/drug_conversion.RData
+computing drug users and usage duration
+IPRATROPIUM
+Call:coxph(formula = mysurv ~ DOXAZOSIN_dur + NUMDRUGS + MMSE + EDUX +     APOE2 + SEX * APOE4, data = mydata.use, subset = AGE >= 55)                 coef exp(coef) se(coef)       z       pDOXAZOSIN_dur -0.2479     0.780  0.11126 -2.2282 2.6e-02NUMDRUGS       0.0293     1.030  0.00911  3.2109 1.3e-03MMSE          -0.1561     0.855  0.02050 -7.6150 2.6e-14EDUX          -0.0121     0.988  0.01088 -1.1131 2.7e-01APOE2         -0.0521     0.949  0.08781 -0.5930 5.5e-01SEX           -0.2494     0.779  0.07956 -3.1348 1.7e-03APOE4         -0.0048     0.995  0.23047 -0.0208 9.8e-01SEX:APOE4      0.2906     1.337  0.13555  2.1441 3.2e-02Likelihood ratio test=146  on 8 df, p=0  n= 5345, number of events= 1048    (28 observations deleted due to missingness)
+0.0258700146165729
+-0.24789586583751
+There were 50 or more warnings (use warnings() to see the first 50)

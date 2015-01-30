@@ -1,0 +1,10 @@
+Loading required package: survival
+Loading required package: splines
+INSULIN GLARGINE
+loading table from: /afs/.ir.stanford.edu/users/s/a/sasidhar/naccdataset/greicius_project/drug_conversion.RData
+computing drug users and usage duration
+INSULIN GLARGINE
+Call:coxph(formula = mysurv ~ DOXAZOSIN_dur + NUMDRUGS + MMSE + EDUX +     APOE2 + SEX * APOE4, data = mydata.use, subset = AGE >= 55)                  coef exp(coef) se(coef)       z       pDOXAZOSIN_dur -0.25700     0.773  0.17362 -1.4802 1.4e-01NUMDRUGS       0.02812     1.029  0.00909  3.0932 2.0e-03MMSE          -0.15437     0.857  0.02043 -7.5564 4.1e-14EDUX          -0.01293     0.987  0.01089 -1.1876 2.3e-01APOE2         -0.05338     0.948  0.08783 -0.6077 5.4e-01SEX           -0.24357     0.784  0.07954 -3.0621 2.2e-03APOE4          0.00365     1.004  0.23048  0.0158 9.9e-01SEX:APOE4      0.28441     1.329  0.13552  2.0986 3.6e-02Likelihood ratio test=143  on 8 df, p=0  n= 5345, number of events= 1048    (28 observations deleted due to missingness)
+0.13880980149449
+-0.25699659576574
+There were 50 or more warnings (use warnings() to see the first 50)

@@ -1,0 +1,10 @@
+Loading required package: survival
+Loading required package: splines
+NORTRIPTYLINE
+loading table from: /afs/.ir.stanford.edu/users/s/a/sasidhar/naccdataset/greicius_project/drug_conversion.RData
+computing drug users and usage duration
+NORTRIPTYLINE
+Call:coxph(formula = mysurv ~ DOXAZOSIN_dur + NUMDRUGS + MMSE + EDUX +     APOE2 + SEX * APOE4, data = mydata.use, subset = AGE >= 55)                 coef exp(coef) se(coef)      z       pDOXAZOSIN_dur -0.3750     0.687  0.23696  -1.58 0.11000NUMDRUGS       0.0109     1.011  0.00931   1.17 0.24000MMSE          -0.1512     0.860  0.01207 -12.53 0.00000EDUX           0.0446     1.046  0.01012   4.41 0.00001APOE2         -0.2491     0.779  0.11719  -2.13 0.03400SEX           -0.1207     0.886  0.09776  -1.23 0.22000APOE4          0.2527     1.287  0.20349   1.24 0.21000SEX:APOE4      0.2310     1.260  0.13070   1.77 0.07700Likelihood ratio test=264  on 8 df, p=0  n= 2583, number of events= 964    (7 observations deleted due to missingness)
+0.11354394071873
+-0.374975954657656
+There were 50 or more warnings (use warnings() to see the first 50)

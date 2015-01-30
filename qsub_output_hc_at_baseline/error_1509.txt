@@ -1,0 +1,10 @@
+Loading required package: survival
+Loading required package: splines
+ZINC SULFATE
+loading table from: /afs/.ir.stanford.edu/users/s/a/sasidhar/naccdataset/greicius_project/drug_conversion.RData
+computing drug users and usage duration
+ZINC SULFATE
+Call:coxph(formula = mysurv ~ DOXAZOSIN_dur + NUMDRUGS + MMSE + EDUX +     APOE2 + SEX * APOE4, data = mydata.use, subset = AGE >= 55)                 coef exp(coef) se(coef)       z       pDOXAZOSIN_dur -0.6084     0.544  0.28282 -2.1513 3.1e-02NUMDRUGS       0.0265     1.027  0.00907  2.9185 3.5e-03MMSE          -0.1549     0.857  0.02044 -7.5750 3.6e-14EDUX          -0.0112     0.989  0.01087 -1.0349 3.0e-01APOE2         -0.0529     0.948  0.08781 -0.6029 5.5e-01SEX           -0.2433     0.784  0.07951 -3.0604 2.2e-03APOE4          0.0139     1.014  0.23038  0.0605 9.5e-01SEX:APOE4      0.2801     1.323  0.13550  2.0668 3.9e-02Likelihood ratio test=147  on 8 df, p=0  n= 5345, number of events= 1048    (28 observations deleted due to missingness)
+0.031454853110655
+-0.608427447276021
+There were 50 or more warnings (use warnings() to see the first 50)

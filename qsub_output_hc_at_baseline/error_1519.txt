@@ -1,0 +1,10 @@
+Loading required package: survival
+Loading required package: splines
+AMLODIPINE-BENAZEPRIL
+loading table from: /afs/.ir.stanford.edu/users/s/a/sasidhar/naccdataset/greicius_project/drug_conversion.RData
+computing drug users and usage duration
+AMLODIPINE-BENAZEPRIL
+Call:coxph(formula = mysurv ~ DOXAZOSIN_dur + NUMDRUGS + MMSE + EDUX +     APOE2 + SEX * APOE4, data = mydata.use, subset = AGE >= 55)                 coef exp(coef) se(coef)       z       pDOXAZOSIN_dur -0.3370     0.714  0.17626 -1.9118 5.6e-02NUMDRUGS       0.0265     1.027  0.00903  2.9347 3.3e-03MMSE          -0.1521     0.859  0.02045 -7.4362 1.0e-13EDUX          -0.0124     0.988  0.01086 -1.1412 2.5e-01APOE2         -0.0511     0.950  0.08784 -0.5812 5.6e-01SEX           -0.2390     0.787  0.07956 -3.0044 2.7e-03APOE4          0.0166     1.017  0.23040  0.0723 9.4e-01SEX:APOE4      0.2817     1.325  0.13552  2.0787 3.8e-02Likelihood ratio test=145  on 8 df, p=0  n= 5345, number of events= 1048    (28 observations deleted due to missingness)
+0.0558957349139139
+-0.336976662614808
+There were 50 or more warnings (use warnings() to see the first 50)

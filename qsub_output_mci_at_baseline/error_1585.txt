@@ -1,0 +1,10 @@
+Loading required package: survival
+Loading required package: splines
+CARBIDOPA-LEVODOPA
+loading table from: /afs/.ir.stanford.edu/users/s/a/sasidhar/naccdataset/greicius_project/drug_conversion.RData
+computing drug users and usage duration
+CARBIDOPA-LEVODOPA
+Call:coxph(formula = mysurv ~ DOXAZOSIN_dur + NUMDRUGS + MMSE + EDUX +     APOE2 + SEX * APOE4, data = mydata.use, subset = AGE >= 55)                 coef exp(coef) se(coef)      z       pDOXAZOSIN_dur -0.6720     0.511  0.19208  -3.50 4.7e-04NUMDRUGS       0.0119     1.012  0.00923   1.29 2.0e-01MMSE          -0.1497     0.861  0.01208 -12.39 0.0e+00EDUX           0.0456     1.047  0.01013   4.50 6.8e-06APOE2         -0.2349     0.791  0.11714  -2.01 4.5e-02SEX           -0.1602     0.852  0.09793  -1.64 1.0e-01APOE4          0.2126     1.237  0.20348   1.04 3.0e-01SEX:APOE4      0.2485     1.282  0.13069   1.90 5.7e-02Likelihood ratio test=288  on 8 df, p=0  n= 2583, number of events= 964    (7 observations deleted due to missingness)
+0.000467791078619384
+-0.672008577699011
+There were 50 or more warnings (use warnings() to see the first 50)

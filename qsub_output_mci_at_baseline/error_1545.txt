@@ -1,0 +1,10 @@
+Loading required package: survival
+Loading required package: splines
+ISOSORBIDE MONONITRATE
+loading table from: /afs/.ir.stanford.edu/users/s/a/sasidhar/naccdataset/greicius_project/drug_conversion.RData
+computing drug users and usage duration
+ISOSORBIDE MONONITRATE
+Call:coxph(formula = mysurv ~ DOXAZOSIN_dur + NUMDRUGS + MMSE + EDUX +     APOE2 + SEX * APOE4, data = mydata.use, subset = AGE >= 55)                 coef exp(coef) se(coef)      z       pDOXAZOSIN_dur -0.4748     0.622  0.18614  -2.55 1.1e-02NUMDRUGS       0.0115     1.012  0.00929   1.24 2.2e-01MMSE          -0.1530     0.858  0.01211 -12.63 0.0e+00EDUX           0.0461     1.047  0.01017   4.54 5.7e-06APOE2         -0.2482     0.780  0.11713  -2.12 3.4e-02SEX           -0.1257     0.882  0.09766  -1.29 2.0e-01APOE4          0.2542     1.289  0.20345   1.25 2.1e-01SEX:APOE4      0.2344     1.264  0.13065   1.79 7.3e-02Likelihood ratio test=270  on 8 df, p=0  n= 2583, number of events= 964    (7 observations deleted due to missingness)
+0.0107454091853662
+-0.474814287899821
+There were 50 or more warnings (use warnings() to see the first 50)

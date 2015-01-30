@@ -1,0 +1,10 @@
+Loading required package: survival
+Loading required package: splines
+COLCHICINE
+loading table from: /afs/.ir.stanford.edu/users/s/a/sasidhar/naccdataset/greicius_project/drug_conversion.RData
+computing drug users and usage duration
+COLCHICINE
+Call:coxph(formula = mysurv ~ DOXAZOSIN_dur + NUMDRUGS + MMSE + EDUX +     APOE2 + SEX * APOE4, data = mydata.use, subset = AGE >= 55)                 coef exp(coef) se(coef)      z       pDOXAZOSIN_dur -0.3584     0.699  0.24661 -1.453 1.5e-01NUMDRUGS       0.0274     1.028  0.00906  3.018 2.5e-03MMSE          -0.1532     0.858  0.02042 -7.501 6.3e-14EDUX          -0.0112     0.989  0.01088 -1.031 3.0e-01APOE2         -0.0537     0.948  0.08782 -0.611 5.4e-01SEX           -0.2443     0.783  0.07956 -3.070 2.1e-03APOE4          0.0259     1.026  0.23038  0.112 9.1e-01SEX:APOE4      0.2757     1.317  0.13550  2.034 4.2e-02Likelihood ratio test=143  on 8 df, p=0  n= 5345, number of events= 1048    (28 observations deleted due to missingness)
+0.146100470789501
+-0.358436507020743
+There were 50 or more warnings (use warnings() to see the first 50)

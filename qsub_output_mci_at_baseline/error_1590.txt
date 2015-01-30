@@ -1,0 +1,10 @@
+Loading required package: survival
+Loading required package: splines
+TRIAMTERENE
+loading table from: /afs/.ir.stanford.edu/users/s/a/sasidhar/naccdataset/greicius_project/drug_conversion.RData
+computing drug users and usage duration
+TRIAMTERENE
+Call:coxph(formula = mysurv ~ DOXAZOSIN_dur + NUMDRUGS + MMSE + EDUX +     APOE2 + SEX * APOE4, data = mydata.use, subset = AGE >= 55)                 coef exp(coef) se(coef)      z       pDOXAZOSIN_dur -0.2827     0.754  0.07077  -3.99 6.5e-05NUMDRUGS       0.0115     1.012  0.00928   1.23 2.2e-01MMSE          -0.1500     0.861  0.01207 -12.43 0.0e+00EDUX           0.0443     1.045  0.01012   4.38 1.2e-05APOE2         -0.2510     0.778  0.11716  -2.14 3.2e-02SEX           -0.1107     0.895  0.09780  -1.13 2.6e-01APOE4          0.2440     1.276  0.20331   1.20 2.3e-01SEX:APOE4      0.2474     1.281  0.13060   1.89 5.8e-02Likelihood ratio test=283  on 8 df, p=0  n= 2583, number of events= 964    (7 observations deleted due to missingness)
+6.476074769457e-05
+-0.282716246398903
+There were 50 or more warnings (use warnings() to see the first 50)

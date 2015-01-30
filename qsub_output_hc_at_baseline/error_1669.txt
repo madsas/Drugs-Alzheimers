@@ -1,0 +1,10 @@
+Loading required package: survival
+Loading required package: splines
+HYDROCHLOROTHIAZIDE
+loading table from: /afs/.ir.stanford.edu/users/s/a/sasidhar/naccdataset/greicius_project/drug_conversion.RData
+computing drug users and usage duration
+HYDROCHLOROTHIAZIDE
+Call:coxph(formula = mysurv ~ DOXAZOSIN_dur + NUMDRUGS + MMSE + EDUX +     APOE2 + SEX * APOE4, data = mydata.use, subset = AGE >= 55)                 coef exp(coef) se(coef)      z       pDOXAZOSIN_dur -0.1690     0.845  0.02498 -6.765 1.3e-11NUMDRUGS       0.0319     1.032  0.00892  3.572 3.5e-04MMSE          -0.1447     0.865  0.02047 -7.071 1.5e-12EDUX          -0.0143     0.986  0.01082 -1.324 1.9e-01APOE2         -0.0404     0.960  0.08784 -0.460 6.5e-01SEX           -0.2117     0.809  0.07956 -2.661 7.8e-03APOE4          0.0359     1.037  0.23048  0.156 8.8e-01SEX:APOE4      0.2753     1.317  0.13554  2.031 4.2e-02Likelihood ratio test=195  on 8 df, p=0  n= 5345, number of events= 1048    (28 observations deleted due to missingness)
+1.33688615733263e-11
+-0.168950427268997
+There were 50 or more warnings (use warnings() to see the first 50)

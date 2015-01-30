@@ -1,0 +1,10 @@
+Loading required package: survival
+Loading required package: splines
+TESTOSTERONE
+loading table from: /afs/.ir.stanford.edu/users/s/a/sasidhar/naccdataset/greicius_project/drug_conversion.RData
+computing drug users and usage duration
+TESTOSTERONE
+Call:coxph(formula = mysurv ~ DOXAZOSIN_dur + NUMDRUGS + MMSE + EDUX +     APOE2 + SEX * APOE4, data = mydata.use, subset = AGE >= 55)                 coef exp(coef) se(coef)       z       pDOXAZOSIN_dur -0.4806     0.618  0.21901 -2.1945 2.8e-02NUMDRUGS       0.0272     1.028  0.00907  2.9956 2.7e-03MMSE          -0.1522     0.859  0.02049 -7.4312 1.1e-13EDUX          -0.0110     0.989  0.01088 -1.0091 3.1e-01APOE2         -0.0489     0.952  0.08780 -0.5571 5.8e-01SEX           -0.2560     0.774  0.07966 -3.2135 1.3e-03APOE4         -0.0121     0.988  0.23047 -0.0527 9.6e-01SEX:APOE4      0.2991     1.349  0.13558  2.2062 2.7e-02Likelihood ratio test=150  on 8 df, p=0  n= 5345, number of events= 1048    (28 observations deleted due to missingness)
+0.0282023088095348
+-0.480606421527982
+There were 50 or more warnings (use warnings() to see the first 50)

@@ -1,0 +1,10 @@
+Loading required package: survival
+Loading required package: splines
+LISINOPRIL
+loading table from: /afs/.ir.stanford.edu/users/s/a/sasidhar/naccdataset/greicius_project/drug_conversion.RData
+computing drug users and usage duration
+LISINOPRIL
+Call:coxph(formula = mysurv ~ DOXAZOSIN_dur + NUMDRUGS + MMSE + EDUX +     APOE2 + SEX * APOE4, data = mydata.use, subset = AGE >= 55)                 coef exp(coef) se(coef)       z       pDOXAZOSIN_dur -0.1273     0.881  0.02608 -4.8789 1.1e-06NUMDRUGS       0.0288     1.029  0.00899  3.2017 1.4e-03MMSE          -0.1531     0.858  0.02039 -7.5091 6.0e-14EDUX          -0.0126     0.987  0.01088 -1.1574 2.5e-01APOE2         -0.0465     0.955  0.08789 -0.5293 6.0e-01SEX           -0.2712     0.763  0.07967 -3.4034 6.7e-04APOE4         -0.0193     0.981  0.23054 -0.0837 9.3e-01SEX:APOE4      0.2984     1.348  0.13556  2.2013 2.8e-02Likelihood ratio test=167  on 8 df, p=0  n= 5345, number of events= 1048    (28 observations deleted due to missingness)
+1.06676222866309e-06
+-0.127251482575573
+There were 50 or more warnings (use warnings() to see the first 50)

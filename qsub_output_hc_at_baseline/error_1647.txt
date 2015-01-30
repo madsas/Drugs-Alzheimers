@@ -1,0 +1,10 @@
+Loading required package: survival
+Loading required package: splines
+LOSARTAN
+loading table from: /afs/.ir.stanford.edu/users/s/a/sasidhar/naccdataset/greicius_project/drug_conversion.RData
+computing drug users and usage duration
+LOSARTAN
+Call:coxph(formula = mysurv ~ DOXAZOSIN_dur + NUMDRUGS + MMSE + EDUX +     APOE2 + SEX * APOE4, data = mydata.use, subset = AGE >= 55)                 coef exp(coef) se(coef)      z       pDOXAZOSIN_dur -0.2412     0.786  0.05609 -4.301 1.7e-05NUMDRUGS       0.0308     1.031  0.00905  3.407 6.6e-04MMSE          -0.1532     0.858  0.02040 -7.509 6.0e-14EDUX          -0.0122     0.988  0.01084 -1.124 2.6e-01APOE2         -0.0467     0.954  0.08783 -0.531 6.0e-01SEX           -0.2400     0.787  0.07962 -3.014 2.6e-03APOE4          0.0161     1.016  0.23038  0.070 9.4e-01SEX:APOE4      0.2788     1.322  0.13552  2.058 4.0e-02Likelihood ratio test=165  on 8 df, p=0  n= 5345, number of events= 1048    (28 observations deleted due to missingness)
+1.69963050614674e-05
+-0.241243574923083
+There were 50 or more warnings (use warnings() to see the first 50)

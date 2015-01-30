@@ -1,0 +1,10 @@
+Loading required package: survival
+Loading required package: splines
+LEVOTHYROXINE
+loading table from: /afs/.ir.stanford.edu/users/s/a/sasidhar/naccdataset/greicius_project/drug_conversion.RData
+computing drug users and usage duration
+LEVOTHYROXINE
+Call:coxph(formula = mysurv ~ DOXAZOSIN_dur + NUMDRUGS + MMSE + EDUX +     APOE2 + SEX * APOE4, data = mydata.use, subset = AGE >= 55)                  coef exp(coef) se(coef)       z       pDOXAZOSIN_dur -0.11601     0.890  0.02078 -5.5818 2.4e-08NUMDRUGS       0.03130     1.032  0.00902  3.4706 5.2e-04MMSE          -0.15287     0.858  0.02052 -7.4502 9.3e-14EDUX          -0.00822     0.992  0.01092 -0.7530 4.5e-01APOE2         -0.05549     0.946  0.08777 -0.6322 5.3e-01SEX           -0.17607     0.839  0.08019 -2.1958 2.8e-02APOE4          0.00801     1.008  0.23042  0.0348 9.7e-01SEX:APOE4      0.28206     1.326  0.13553  2.0811 3.7e-02Likelihood ratio test=176  on 8 df, p=0  n= 5345, number of events= 1048    (28 observations deleted due to missingness)
+2.37996740093394e-08
+-0.116007774386633
+There were 50 or more warnings (use warnings() to see the first 50)

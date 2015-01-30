@@ -1,0 +1,10 @@
+Loading required package: survival
+Loading required package: splines
+FLUTICASONE-SALMETEROL
+loading table from: /afs/.ir.stanford.edu/users/s/a/sasidhar/naccdataset/greicius_project/drug_conversion.RData
+computing drug users and usage duration
+FLUTICASONE-SALMETEROL
+Call:coxph(formula = mysurv ~ DOXAZOSIN_dur + NUMDRUGS + MMSE + EDUX +     APOE2 + SEX * APOE4, data = mydata.use, subset = AGE >= 55)                 coef exp(coef) se(coef)      z       pDOXAZOSIN_dur -0.4667     0.627  0.13462  -3.47 5.3e-04NUMDRUGS       0.0133     1.013  0.00932   1.43 1.5e-01MMSE          -0.1502     0.861  0.01212 -12.39 0.0e+00EDUX           0.0438     1.045  0.01011   4.33 1.5e-05APOE2         -0.2397     0.787  0.11714  -2.05 4.1e-02SEX           -0.1196     0.887  0.09774  -1.22 2.2e-01APOE4          0.2536     1.289  0.20350   1.25 2.1e-01SEX:APOE4      0.2259     1.253  0.13066   1.73 8.4e-02Likelihood ratio test=280  on 8 df, p=0  n= 2583, number of events= 964    (7 observations deleted due to missingness)
+0.000526317719249159
+-0.466721432915798
+There were 50 or more warnings (use warnings() to see the first 50)

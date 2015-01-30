@@ -1,0 +1,10 @@
+Loading required package: survival
+Loading required package: splines
+VALSARTAN
+loading table from: /afs/.ir.stanford.edu/users/s/a/sasidhar/naccdataset/greicius_project/drug_conversion.RData
+computing drug users and usage duration
+VALSARTAN
+Call:coxph(formula = mysurv ~ DOXAZOSIN_dur + NUMDRUGS + MMSE + EDUX +     APOE2 + SEX * APOE4, data = mydata.use, subset = AGE >= 55)                 coef exp(coef) se(coef)      z       pDOXAZOSIN_dur -0.1092     0.897  0.05630  -1.94 5.2e-02NUMDRUGS       0.0112     1.011  0.00927   1.21 2.3e-01MMSE          -0.1497     0.861  0.01211 -12.36 0.0e+00EDUX           0.0448     1.046  0.01014   4.42 9.8e-06APOE2         -0.2463     0.782  0.11716  -2.10 3.6e-02SEX           -0.1270     0.881  0.09767  -1.30 1.9e-01APOE4          0.2409     1.272  0.20352   1.18 2.4e-01SEX:APOE4      0.2388     1.270  0.13069   1.83 6.8e-02Likelihood ratio test=264  on 8 df, p=0  n= 2583, number of events= 964    (7 observations deleted due to missingness)
+0.0523113331882549
+-0.109246596907716
+There were 50 or more warnings (use warnings() to see the first 50)

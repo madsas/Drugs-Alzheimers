@@ -1,0 +1,10 @@
+Loading required package: survival
+Loading required package: splines
+GLIMEPIRIDE
+loading table from: /afs/.ir.stanford.edu/users/s/a/sasidhar/naccdataset/greicius_project/drug_conversion.RData
+computing drug users and usage duration
+GLIMEPIRIDE
+Call:coxph(formula = mysurv ~ DOXAZOSIN_dur + NUMDRUGS + MMSE + EDUX +     APOE2 + SEX * APOE4, data = mydata.use, subset = AGE >= 55)                 coef exp(coef) se(coef)       z       pDOXAZOSIN_dur -0.1417     0.868  0.12156 -1.1660 2.4e-01NUMDRUGS       0.0275     1.028  0.00908  3.0252 2.5e-03MMSE          -0.1535     0.858  0.02041 -7.5198 5.5e-14EDUX          -0.0119     0.988  0.01087 -1.0945 2.7e-01APOE2         -0.0532     0.948  0.08783 -0.6055 5.4e-01SEX           -0.2433     0.784  0.07957 -3.0576 2.2e-03APOE4          0.0112     1.011  0.23042  0.0488 9.6e-01SEX:APOE4      0.2827     1.327  0.13551  2.0861 3.7e-02Likelihood ratio test=141  on 8 df, p=0  n= 5345, number of events= 1048    (28 observations deleted due to missingness)
+0.243598808757409
+-0.141745560975249
+There were 50 or more warnings (use warnings() to see the first 50)

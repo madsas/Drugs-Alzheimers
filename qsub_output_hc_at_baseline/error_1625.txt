@@ -1,0 +1,10 @@
+Loading required package: survival
+Loading required package: splines
+CHONDROITIN-GLUCOSAMINE
+loading table from: /afs/.ir.stanford.edu/users/s/a/sasidhar/naccdataset/greicius_project/drug_conversion.RData
+computing drug users and usage duration
+CHONDROITIN-GLUCOSAMINE
+Call:coxph(formula = mysurv ~ DOXAZOSIN_dur + NUMDRUGS + MMSE + EDUX +     APOE2 + SEX * APOE4, data = mydata.use, subset = AGE >= 55)                  coef exp(coef) se(coef)      z       pDOXAZOSIN_dur -0.45529     0.634   0.1201 -3.792 1.5e-04NUMDRUGS       0.02692     1.027   0.0091  2.959 3.1e-03MMSE          -0.14991     0.861   0.0205 -7.330 2.3e-13EDUX          -0.01125     0.989   0.0109 -1.037 3.0e-01APOE2         -0.05218     0.949   0.0879 -0.594 5.5e-01SEX           -0.24966     0.779   0.0795 -3.139 1.7e-03APOE4          0.00898     1.009   0.2304  0.039 9.7e-01SEX:APOE4      0.28629     1.331   0.1355  2.113 3.5e-02Likelihood ratio test=160  on 8 df, p=0  n= 5345, number of events= 1048    (28 observations deleted due to missingness)
+0.000149341355298982
+-0.455286165587363
+There were 50 or more warnings (use warnings() to see the first 50)

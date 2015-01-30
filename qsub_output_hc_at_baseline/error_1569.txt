@@ -1,0 +1,10 @@
+Loading required package: survival
+Loading required package: splines
+GALANTAMINE
+loading table from: /afs/.ir.stanford.edu/users/s/a/sasidhar/naccdataset/greicius_project/drug_conversion.RData
+computing drug users and usage duration
+GALANTAMINE
+Call:coxph(formula = mysurv ~ DOXAZOSIN_dur + NUMDRUGS + MMSE + EDUX +     APOE2 + SEX * APOE4, data = mydata.use, subset = AGE >= 55)                 coef exp(coef) se(coef)       z       pDOXAZOSIN_dur  0.4113     1.509  0.16576  2.4811 1.3e-02NUMDRUGS       0.0261     1.026  0.00905  2.8820 4.0e-03MMSE          -0.1540     0.857  0.02045 -7.5316 5.0e-14EDUX          -0.0116     0.988  0.01088 -1.0686 2.9e-01APOE2         -0.0626     0.939  0.08806 -0.7114 4.8e-01SEX           -0.2376     0.789  0.07962 -2.9840 2.8e-03APOE4          0.0114     1.011  0.23039  0.0494 9.6e-01SEX:APOE4      0.2833     1.327  0.13551  2.0905 3.7e-02Likelihood ratio test=144  on 8 df, p=0  n= 5345, number of events= 1048    (28 observations deleted due to missingness)
+0.0130990828635577
+0.411271282949515
+There were 50 or more warnings (use warnings() to see the first 50)

@@ -1,0 +1,10 @@
+Loading required package: survival
+Loading required package: splines
+ISOSORBIDE DINITRATE
+loading table from: /afs/.ir.stanford.edu/users/s/a/sasidhar/naccdataset/greicius_project/drug_conversion.RData
+computing drug users and usage duration
+ISOSORBIDE DINITRATE
+Call:coxph(formula = mysurv ~ DOXAZOSIN_dur + NUMDRUGS + MMSE + EDUX +     APOE2 + SEX * APOE4, data = mydata.use, subset = AGE >= 55)                 coef exp(coef) se(coef)      z       pDOXAZOSIN_dur -0.3049     0.737  0.22721  -1.34 1.8e-01NUMDRUGS       0.0108     1.011  0.00927   1.17 2.4e-01MMSE          -0.1513     0.860  0.01210 -12.51 0.0e+00EDUX           0.0444     1.045  0.01014   4.38 1.2e-05APOE2         -0.2518     0.777  0.11719  -2.15 3.2e-02SEX           -0.1311     0.877  0.09772  -1.34 1.8e-01APOE4          0.2361     1.266  0.20353   1.16 2.5e-01SEX:APOE4      0.2440     1.276  0.13069   1.87 6.2e-02Likelihood ratio test=262  on 8 df, p=0  n= 2583, number of events= 964    (7 observations deleted due to missingness)
+0.179631790837576
+-0.304887196824672
+There were 50 or more warnings (use warnings() to see the first 50)

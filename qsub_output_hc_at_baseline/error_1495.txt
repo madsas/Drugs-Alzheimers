@@ -1,0 +1,10 @@
+Loading required package: survival
+Loading required package: splines
+ACETAMINOPHEN-PROPOXYPHENE
+loading table from: /afs/.ir.stanford.edu/users/s/a/sasidhar/naccdataset/greicius_project/drug_conversion.RData
+computing drug users and usage duration
+ACETAMINOPHEN-PROPOXYPHENE
+Call:coxph(formula = mysurv ~ DOXAZOSIN_dur + NUMDRUGS + MMSE + EDUX +     APOE2 + SEX * APOE4, data = mydata.use, subset = AGE >= 55)                  coef exp(coef) se(coef)       z       pDOXAZOSIN_dur -0.15590     0.856  0.19372 -0.8048 4.2e-01NUMDRUGS       0.02675     1.027  0.00906  2.9541 3.1e-03MMSE          -0.15308     0.858  0.02043 -7.4915 6.8e-14EDUX          -0.01214     0.988  0.01088 -1.1161 2.6e-01APOE2         -0.05091     0.950  0.08784 -0.5796 5.6e-01SEX           -0.24240     0.785  0.07958 -3.0459 2.3e-03APOE4          0.00884     1.009  0.23044  0.0384 9.7e-01SEX:APOE4      0.28388     1.328  0.13553  2.0946 3.6e-02Likelihood ratio test=140  on 8 df, p=0  n= 5345, number of events= 1048    (28 observations deleted due to missingness)
+0.420951015067612
+-0.155898497818454
+There were 50 or more warnings (use warnings() to see the first 50)

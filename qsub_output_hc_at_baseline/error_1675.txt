@@ -1,0 +1,10 @@
+Loading required package: survival
+Loading required package: splines
+MULTIVITAMIN WITH MINERALS
+loading table from: /afs/.ir.stanford.edu/users/s/a/sasidhar/naccdataset/greicius_project/drug_conversion.RData
+computing drug users and usage duration
+MULTIVITAMIN WITH MINERALS
+Call:coxph(formula = mysurv ~ DOXAZOSIN_dur + NUMDRUGS + MMSE + EDUX +     APOE2 + SEX * APOE4, data = mydata.use, subset = AGE >= 55)                  coef exp(coef) se(coef)      z       pDOXAZOSIN_dur -0.39730     0.672  0.04026 -9.869 0.0e+00NUMDRUGS       0.02645     1.027  0.00905  2.922 3.5e-03MMSE          -0.13545     0.873  0.02065 -6.561 5.3e-11EDUX          -0.00422     0.996  0.01080 -0.391 7.0e-01APOE2         -0.05710     0.945  0.08781 -0.650 5.2e-01SEX           -0.20613     0.814  0.07964 -2.588 9.6e-03APOE4          0.05569     1.057  0.23052  0.242 8.1e-01SEX:APOE4      0.24852     1.282  0.13549  1.834 6.7e-02Likelihood ratio test=268  on 8 df, p=0  n= 5345, number of events= 1048    (28 observations deleted due to missingness)
+0
+-0.397298828919674
+There were 50 or more warnings (use warnings() to see the first 50)

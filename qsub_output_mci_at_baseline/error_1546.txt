@@ -1,0 +1,10 @@
+Loading required package: survival
+Loading required package: splines
+SAW PALMETTO
+loading table from: /afs/.ir.stanford.edu/users/s/a/sasidhar/naccdataset/greicius_project/drug_conversion.RData
+computing drug users and usage duration
+SAW PALMETTO
+Call:coxph(formula = mysurv ~ DOXAZOSIN_dur + NUMDRUGS + MMSE + EDUX +     APOE2 + SEX * APOE4, data = mydata.use, subset = AGE >= 55)                  coef exp(coef) se(coef)       z       pDOXAZOSIN_dur -0.01394     0.986  0.14220  -0.098 9.2e-01NUMDRUGS       0.00981     1.010  0.00926   1.059 2.9e-01MMSE          -0.15158     0.859  0.01208 -12.547 0.0e+00EDUX           0.04448     1.045  0.01013   4.389 1.1e-05APOE2         -0.24751     0.781  0.11716  -2.113 3.5e-02SEX           -0.12982     0.878  0.09794  -1.326 1.9e-01APOE4          0.24866     1.282  0.20348   1.222 2.2e-01SEX:APOE4      0.23752     1.268  0.13069   1.817 6.9e-02Likelihood ratio test=260  on 8 df, p=0  n= 2583, number of events= 964    (7 observations deleted due to missingness)
+0.921910087967087
+-0.0139393434553377
+There were 50 or more warnings (use warnings() to see the first 50)

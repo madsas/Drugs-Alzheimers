@@ -1,0 +1,10 @@
+Loading required package: survival
+Loading required package: splines
+POLYETHYLENE GLYCOL 3350
+loading table from: /afs/.ir.stanford.edu/users/s/a/sasidhar/naccdataset/greicius_project/drug_conversion.RData
+computing drug users and usage duration
+POLYETHYLENE GLYCOL 3350
+Call:coxph(formula = mysurv ~ DOXAZOSIN_dur + NUMDRUGS + MMSE + EDUX +     APOE2 + SEX * APOE4, data = mydata.use, subset = AGE >= 55)                 coef exp(coef) se(coef)      z       pDOXAZOSIN_dur -0.6303     0.532  0.21460  -2.94 3.3e-03NUMDRUGS       0.0119     1.012  0.00936   1.27 2.0e-01MMSE          -0.1513     0.860  0.01205 -12.55 0.0e+00EDUX           0.0464     1.048  0.01014   4.58 4.6e-06APOE2         -0.2543     0.775  0.11716  -2.17 3.0e-02SEX           -0.1200     0.887  0.09774  -1.23 2.2e-01APOE4          0.2517     1.286  0.20338   1.24 2.2e-01SEX:APOE4      0.2359     1.266  0.13066   1.81 7.1e-02Likelihood ratio test=274  on 8 df, p=0  n= 2583, number of events= 964    (7 observations deleted due to missingness)
+0.00331509546252884
+-0.630254618596115
+There were 50 or more warnings (use warnings() to see the first 50)

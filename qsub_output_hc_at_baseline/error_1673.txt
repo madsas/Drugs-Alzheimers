@@ -1,0 +1,10 @@
+Loading required package: survival
+Loading required package: splines
+SIMVASTATIN
+loading table from: /afs/.ir.stanford.edu/users/s/a/sasidhar/naccdataset/greicius_project/drug_conversion.RData
+computing drug users and usage duration
+SIMVASTATIN
+Call:coxph(formula = mysurv ~ DOXAZOSIN_dur + NUMDRUGS + MMSE + EDUX +     APOE2 + SEX * APOE4, data = mydata.use, subset = AGE >= 55)                 coef exp(coef) se(coef)       z       pDOXAZOSIN_dur -0.1628     0.850  0.02648 -6.1494 7.8e-10NUMDRUGS       0.0316     1.032  0.00896  3.5208 4.3e-04MMSE          -0.1470     0.863  0.02044 -7.1909 6.4e-13EDUX          -0.0126     0.987  0.01084 -1.1665 2.4e-01APOE2         -0.0787     0.924  0.08786 -0.8958 3.7e-01SEX           -0.2836     0.753  0.07974 -3.5562 3.8e-04APOE4          0.0121     1.012  0.23043  0.0527 9.6e-01SEX:APOE4      0.2863     1.331  0.13551  2.1127 3.5e-02Likelihood ratio test=185  on 8 df, p=0  n= 5345, number of events= 1048    (28 observations deleted due to missingness)
+7.77999553669417e-10
+-0.162806195035596
+There were 50 or more warnings (use warnings() to see the first 50)

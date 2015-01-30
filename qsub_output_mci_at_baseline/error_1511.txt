@@ -1,0 +1,10 @@
+Loading required package: survival
+Loading required package: splines
+CYCLOSPORINE OPHTHALMIC
+loading table from: /afs/.ir.stanford.edu/users/s/a/sasidhar/naccdataset/greicius_project/drug_conversion.RData
+computing drug users and usage duration
+CYCLOSPORINE OPHTHALMIC
+Call:coxph(formula = mysurv ~ DOXAZOSIN_dur + NUMDRUGS + MMSE + EDUX +     APOE2 + SEX * APOE4, data = mydata.use, subset = AGE >= 55)                  coef exp(coef) se(coef)       z       pDOXAZOSIN_dur -0.28042     0.755  0.35236  -0.796 0.43000NUMDRUGS       0.00999     1.010  0.00927   1.078 0.28000MMSE          -0.15158     0.859  0.01207 -12.560 0.00000EDUX           0.04466     1.046  0.01013   4.408 0.00001APOE2         -0.24753     0.781  0.11716  -2.113 0.03500SEX           -0.12796     0.880  0.09772  -1.309 0.19000APOE4          0.24360     1.276  0.20350   1.197 0.23000SEX:APOE4      0.24186     1.274  0.13072   1.850 0.06400Likelihood ratio test=261  on 8 df, p=0  n= 2583, number of events= 964    (7 observations deleted due to missingness)
+0.426121609589192
+-0.280421835680772
+There were 50 or more warnings (use warnings() to see the first 50)

@@ -1,0 +1,10 @@
+Loading required package: survival
+Loading required package: splines
+ESTRADIOL
+loading table from: /afs/.ir.stanford.edu/users/s/a/sasidhar/naccdataset/greicius_project/drug_conversion.RData
+computing drug users and usage duration
+ESTRADIOL
+Call:coxph(formula = mysurv ~ DOXAZOSIN_dur + NUMDRUGS + MMSE + EDUX +     APOE2 + SEX * APOE4, data = mydata.use, subset = AGE >= 55)                  coef exp(coef) se(coef)       z       pDOXAZOSIN_dur -0.10633     0.899  0.12562  -0.846 4.0e-01NUMDRUGS       0.00998     1.010  0.00927   1.076 2.8e-01MMSE          -0.15143     0.859  0.01207 -12.541 0.0e+00EDUX           0.04489     1.046  0.01014   4.426 9.6e-06APOE2         -0.24924     0.779  0.11717  -2.127 3.3e-02SEX           -0.12072     0.886  0.09814  -1.230 2.2e-01APOE4          0.24814     1.282  0.20343   1.220 2.2e-01SEX:APOE4      0.23705     1.268  0.13067   1.814 7.0e-02Likelihood ratio test=261  on 8 df, p=0  n= 2583, number of events= 964    (7 observations deleted due to missingness)
+0.397316162937331
+-0.106327608564872
+There were 50 or more warnings (use warnings() to see the first 50)

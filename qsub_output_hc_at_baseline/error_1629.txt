@@ -1,0 +1,10 @@
+Loading required package: survival
+Loading required package: splines
+LORATADINE
+loading table from: /afs/.ir.stanford.edu/users/s/a/sasidhar/naccdataset/greicius_project/drug_conversion.RData
+computing drug users and usage duration
+LORATADINE
+Call:coxph(formula = mysurv ~ DOXAZOSIN_dur + NUMDRUGS + MMSE + EDUX +     APOE2 + SEX * APOE4, data = mydata.use, subset = AGE >= 55)                  coef exp(coef) se(coef)       z       pDOXAZOSIN_dur -0.16546     0.847  0.07148 -2.3148 2.1e-02NUMDRUGS       0.02790     1.028  0.00908  3.0740 2.1e-03MMSE          -0.15214     0.859  0.02044 -7.4427 9.9e-14EDUX          -0.01154     0.989  0.01087 -1.0616 2.9e-01APOE2         -0.05728     0.944  0.08784 -0.6521 5.1e-01SEX           -0.23907     0.787  0.07956 -3.0050 2.7e-03APOE4          0.00897     1.009  0.23041  0.0389 9.7e-01SEX:APOE4      0.28240     1.326  0.13551  2.0839 3.7e-02Likelihood ratio test=146  on 8 df, p=0  n= 5345, number of events= 1048    (28 observations deleted due to missingness)
+0.0206229976698218
+-0.165464990005731
+There were 50 or more warnings (use warnings() to see the first 50)

@@ -1,0 +1,10 @@
+Loading required package: survival
+Loading required package: splines
+NAPROXEN
+loading table from: /afs/.ir.stanford.edu/users/s/a/sasidhar/naccdataset/greicius_project/drug_conversion.RData
+computing drug users and usage duration
+NAPROXEN
+Call:coxph(formula = mysurv ~ DOXAZOSIN_dur + NUMDRUGS + MMSE + EDUX +     APOE2 + SEX * APOE4, data = mydata.use, subset = AGE >= 55)                 coef exp(coef) se(coef)      z       pDOXAZOSIN_dur -0.2857     0.752  0.10490  -2.72 6.5e-03NUMDRUGS       0.0104     1.010  0.00927   1.12 2.6e-01MMSE          -0.1493     0.861  0.01210 -12.34 0.0e+00EDUX           0.0453     1.046  0.01013   4.47 7.7e-06APOE2         -0.2527     0.777  0.11718  -2.16 3.1e-02SEX           -0.1289     0.879  0.09775  -1.32 1.9e-01APOE4          0.2458     1.279  0.20355   1.21 2.3e-01SEX:APOE4      0.2392     1.270  0.13073   1.83 6.7e-02Likelihood ratio test=269  on 8 df, p=0  n= 2583, number of events= 964    (7 observations deleted due to missingness)
+0.00646594429241165
+-0.285668766423619
+There were 50 or more warnings (use warnings() to see the first 50)

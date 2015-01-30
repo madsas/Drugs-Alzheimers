@@ -1,0 +1,10 @@
+Loading required package: survival
+Loading required package: splines
+NIFEDIPINE
+loading table from: /afs/.ir.stanford.edu/users/s/a/sasidhar/naccdataset/greicius_project/drug_conversion.RData
+computing drug users and usage duration
+NIFEDIPINE
+Call:coxph(formula = mysurv ~ DOXAZOSIN_dur + NUMDRUGS + MMSE + EDUX +     APOE2 + SEX * APOE4, data = mydata.use, subset = AGE >= 55)                 coef exp(coef) se(coef)       z       pDOXAZOSIN_dur -0.2508     0.778  0.08724 -2.8749 4.0e-03NUMDRUGS       0.0281     1.029  0.00903  3.1152 1.8e-03MMSE          -0.1543     0.857  0.02049 -7.5320 5.0e-14EDUX          -0.0121     0.988  0.01087 -1.1146 2.7e-01APOE2         -0.0381     0.963  0.08793 -0.4334 6.6e-01SEX           -0.2576     0.773  0.07960 -3.2357 1.2e-03APOE4         -0.0223     0.978  0.23061 -0.0966 9.2e-01SEX:APOE4      0.3048     1.356  0.13564  2.2474 2.5e-02Likelihood ratio test=151  on 8 df, p=0  n= 5345, number of events= 1048    (28 observations deleted due to missingness)
+0.00404143864955042
+-0.250805882708904
+There were 50 or more warnings (use warnings() to see the first 50)

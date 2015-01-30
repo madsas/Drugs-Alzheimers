@@ -1,0 +1,10 @@
+Loading required package: survival
+Loading required package: splines
+METFORMIN
+loading table from: /afs/.ir.stanford.edu/users/s/a/sasidhar/naccdataset/greicius_project/drug_conversion.RData
+computing drug users and usage duration
+METFORMIN
+Call:coxph(formula = mysurv ~ DOXAZOSIN_dur + NUMDRUGS + MMSE + EDUX +     APOE2 + SEX * APOE4, data = mydata.use, subset = AGE >= 55)                 coef exp(coef) se(coef)      z       pDOXAZOSIN_dur -0.1460     0.864  0.04835  -3.02 2.5e-03NUMDRUGS       0.0146     1.015  0.00932   1.57 1.2e-01MMSE          -0.1535     0.858  0.01206 -12.73 0.0e+00EDUX           0.0408     1.042  0.01021   4.00 6.4e-05APOE2         -0.2413     0.786  0.11725  -2.06 4.0e-02SEX           -0.1323     0.876  0.09766  -1.35 1.8e-01APOE4          0.2574     1.294  0.20346   1.27 2.1e-01SEX:APOE4      0.2258     1.253  0.13073   1.73 8.4e-02Likelihood ratio test=271  on 8 df, p=0  n= 2583, number of events= 964    (7 observations deleted due to missingness)
+0.00253138868609781
+-0.145981556218657
+There were 50 or more warnings (use warnings() to see the first 50)

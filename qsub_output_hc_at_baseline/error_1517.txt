@@ -1,0 +1,10 @@
+Loading required package: survival
+Loading required package: splines
+QUINAPRIL
+loading table from: /afs/.ir.stanford.edu/users/s/a/sasidhar/naccdataset/greicius_project/drug_conversion.RData
+computing drug users and usage duration
+QUINAPRIL
+Call:coxph(formula = mysurv ~ DOXAZOSIN_dur + NUMDRUGS + MMSE + EDUX +     APOE2 + SEX * APOE4, data = mydata.use, subset = AGE >= 55)                  coef exp(coef) se(coef)       z       pDOXAZOSIN_dur -0.00249     0.998  0.08964 -0.0277 9.8e-01NUMDRUGS       0.02633     1.027  0.00905  2.9093 3.6e-03MMSE          -0.15345     0.858  0.02045 -7.5045 6.2e-14EDUX          -0.01183     0.988  0.01087 -1.0887 2.8e-01APOE2         -0.05321     0.948  0.08783 -0.6058 5.4e-01SEX           -0.24117     0.786  0.07957 -3.0310 2.4e-03APOE4          0.01346     1.014  0.23040  0.0584 9.5e-01SEX:APOE4      0.28155     1.325  0.13551  2.0777 3.8e-02Likelihood ratio test=140  on 8 df, p=0  n= 5345, number of events= 1048    (28 observations deleted due to missingness)
+0.97787474463774
+-0.00248604647404377
+There were 50 or more warnings (use warnings() to see the first 50)

@@ -1,0 +1,10 @@
+Loading required package: survival
+Loading required package: splines
+TOLTERODINE
+loading table from: /afs/.ir.stanford.edu/users/s/a/sasidhar/naccdataset/greicius_project/drug_conversion.RData
+computing drug users and usage duration
+TOLTERODINE
+Call:coxph(formula = mysurv ~ DOXAZOSIN_dur + NUMDRUGS + MMSE + EDUX +     APOE2 + SEX * APOE4, data = mydata.use, subset = AGE >= 55)                 coef exp(coef) se(coef)      z       pDOXAZOSIN_dur -0.1600     0.852  0.08613  -1.86 6.3e-02NUMDRUGS       0.0112     1.011  0.00927   1.21 2.3e-01MMSE          -0.1508     0.860  0.01208 -12.48 0.0e+00EDUX           0.0446     1.046  0.01012   4.40 1.1e-05APOE2         -0.2439     0.784  0.11714  -2.08 3.7e-02SEX           -0.1182     0.889  0.09780  -1.21 2.3e-01APOE4          0.2567     1.293  0.20351   1.26 2.1e-01SEX:APOE4      0.2307     1.259  0.13070   1.76 7.8e-02Likelihood ratio test=264  on 8 df, p=0  n= 2583, number of events= 964    (7 observations deleted due to missingness)
+0.0632361403576255
+-0.159989746981754
+There were 50 or more warnings (use warnings() to see the first 50)
