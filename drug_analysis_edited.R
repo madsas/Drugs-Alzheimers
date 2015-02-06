@@ -10,8 +10,8 @@ outputfilename <- "drug_coxph_summ_3.txt"
 patientSubset <- 3 #HC or MCI at baseline
 
 #read.data
-
-data <- read.csv("altmann06122013.csv", as.is=T)
+DRUGDURS <- readRDS("DRUGDURS.Rdata")
+data <- read.csv("../altmann06122013.csv", as.is=T)
 data.df <- data.frame(data)
 
 #prepared data
@@ -19,7 +19,7 @@ xtab.fname <- "drug_conversion.RData"
 #xtab.fname <- "/mnt/mapricot/musk2/home/altmann/data/NACC/RData/drug_conversion.RData"
 
 #Read in each of the drugs#
-drug_list <- read.csv("sorted_unique_drugs_table.csv", header = TRUE, sep = ",")
+drug_list <- read.csv("../sorted_unique_drugs_table.csv", header = TRUE, sep = ",")
 drug_list <- drug_list$Drug
 drug_list <- as.character(drug_list)
 drug_list <- t(drug_list)
@@ -28,6 +28,8 @@ drug_list <- drug_list[1489:1679]
 #drug_list <- drug_list[1489]
 
 for (cur_drug in drug_list) {
+
+drug_index <- 1
 
 drugA <- "LANSOPRAZOLE"
 drugB <- "DOXAZOSIN"
@@ -247,13 +249,15 @@ for(drug in drugs){
   tmp[drug.users] <- 1
   drugcol <- cbind(drugcol, tmp)
 
-  tmp <- rep(0, nrow(xtab))
-  names(tmp) <- rownames(xtab)
-  tmp2 <- sapply(drug.users, function(x){ RXlength(data,x,dc,drug,xtab)})
-  tmp[drug.users] <- tmp2
-  tmp <- tmp/365.25
-  drugdur <- cbind(drugdur,tmp)  
+##Remove because "ALL_DRUGDURS" now has this information
+  #tmp <- rep(0, nrow(xtab))
+  #names(tmp) <- rownames(xtab)
+  #tmp2 <- sapply(drug.users, function(x){ RXlength(data,x,dc,drug,xtab)})
+  #tmp[drug.users] <- tmp2
+  #tmp <- tmp/365.25
+  #drugdur <- cbind(drugdur,tmp)  
 }
+drugdur <- t(t(DRUGDURS[, drug_index]))
 colnames(drugcol) <- drugs
 drugs_dur <- c("DOXAZOSIN")
 colnames(drugdur) <- paste(drugs_dur,"dur",sep="_")
@@ -313,6 +317,8 @@ coxph_val <- coxph(mysurv ~ DOXAZOSIN_dur + NUMDRUGS + MMSE + EDUX + APOE2 + SEX
 #Write coxph values to file
 out <- capture.output(coxph_val)
 cat(out, file = outputfilename, sep = "\n", append=TRUE)
+
+drug_index <- drug_index + 1
 
 #limit to males
 ###coxph(mysurv ~ DOXAZOSIN_dur + MMSE + EDUX + APOE2 + APOE4, data=mydata.use, subset=SEX==1)
